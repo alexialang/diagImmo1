@@ -3,7 +3,13 @@
 import '@mantine/core/styles.css';
 
 import { MantineProvider } from '@mantine/core';
+import { Button } from '@mantine/core';
+import { Appshell } from './src/Appshell';
 
-export default function App() {
-  return <MantineProvider>Coucou</MantineProvider>;
+export const App = () => {
+  return (
+    <MantineProvider>
+      <Appshell/>
+    </MantineProvider>
+  );
 }
