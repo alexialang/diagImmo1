@@ -4,12 +4,12 @@ import '@mantine/core/styles.css';
 
 import { MantineProvider } from '@mantine/core';
 import { Button } from '@mantine/core';
-import { Appshell } from './src/Appshell';
+import { AppShell } from './components/AppShell';
 
 export const App = () => {
   return (
     <MantineProvider>
-      <Appshell/>
+      <AppShell/>
     </MantineProvider>
   );
 }
