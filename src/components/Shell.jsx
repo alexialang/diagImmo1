@@ -1,7 +1,7 @@
 import { useDisclosure } from '@mantine/hooks';
 import { AppShell, Burger } from '@mantine/core';
 
-export const AppShell = () => {
+export const Shell = () => {
 
   const [opened, { toggle }] = useDisclosure();
 

@@ -3,13 +3,12 @@
 import '@mantine/core/styles.css';
 
 import { MantineProvider } from '@mantine/core';
-import { Button } from '@mantine/core';
-import { AppShell } from './components/AppShell';
+import { Shell } from './components/Shell';
 
 export const App = () => {
   return (
     <MantineProvider>
-      <AppShell/>
+      <Shell />
     </MantineProvider>
   );
 }
