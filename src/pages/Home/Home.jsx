@@ -31,18 +31,35 @@ export const Home = () => {
       </div>
       <div className={styles.divImg}>
       <Link to="/">
-       <div><img src="/src/assets/maison2.png" alt="photo d'une maison"/><h3>Vos obligations d’Achat</h3></div> </Link> 
+       <div><img src="/src/assets/maison2.png" alt="photo d'une maison"/><h3 className={styles.linkTxt}>Vos obligations d’Achat</h3></div> </Link> 
        <Link to="/">
-        <div><img src="/src/assets/poigneeMain.png" alt="poignée de main"/><h3>Vos obligations de Location</h3></div> </Link>
+        <div><img src="/src/assets/poigneeMain.png" alt="poignée de main"/><h3 className={styles.linkTxt}>Vos obligations de Location</h3></div> </Link>
       </div>
       <div className={styles.backgroundImg}><div className="color"></div ><div className="color"></div></div >
+      </div>
+
       {/* Section Pourquoi Nous Choisir */}
-      </div><div><img className={styles.imgPourquoi} src="src/assets/batimentMetz.png" alt="Batiment en pierres jaunes et Batiment en pierre rouge"/> </div>
-        <div className={styles.divPourquoi}><h2>Pourquoi Nous Choisir ?</h2>
+      <div><img className={styles.imgPourquoi} src="src/assets/batimentMetz.png" alt="Batiment en pierres jaunes et Batiment en pierre rouge"/> 
+      </div>
+      <div className={styles.divPourquoi}><h2>Pourquoi Nous Choisir ?</h2>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
       </div>
-  </div>
 
-  
+      {/* Section Obligation Moselle */}
+      <div className={styles.lastSection}>
+      <div className={styles.txtLastSection}><h2 className={styles.titleLastSection}>Quelles sont mes obligations de diagnostics immobiliers sur Metz (MOSELLE) ?</h2>
+      <ul>
+        <li>Le diagnostic amiante est obligatoire si le permis de construire a été déposé avant 1997 (MOSELLE)</li>
+        <li>Le DPE est obligatoire</li>
+        <li>Le diagnostic plomb est obligatoire si le permis de construire date d’avant 1949</li>
+        <li>Le diagnostic électrique est obligatoire si l’installation date de plus de quinze ans</li>
+        <li>Le diagnostic gaz est obligatoire si l’installation date de plus de quinze ans</li>
+        <li>Le diagnostic termites est obligatoire si un arrêté préfectoral (sur le département MOSELLE) ou communal (sur Metz) le prescrit</li>
+        <li>Le métrage Loi Carrez est obligatoire si le bien est en copropriété</li>
+        <li>L’Etat des Risques Pollution des sols (ERP) est obligatoire</li>
+        </ul></div>
+        <img src="/src/assets/cathe.png"/>
+        </div>
+  </div>
   );
 };
