@@ -7,7 +7,7 @@ export const Header = () => {
     <div className={styles.root}>
       <img
         className={styles.logo}
-        src="/src/assets/logo.jpg"
+        src="/src/assets/logo.png"
         alt="logo de l'entreprise"
       />
       <div className={styles.nav}>

@@ -1,0 +1,96 @@
+/* Section Image Panoramique */
+.firstImage{
+  background-image:url(../../assets/imagePanoHome.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+  
+}
+.buttonFirstImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Section 2 */
+
+.section2{ background-color:#e9e9e9;
+}
+
+.texte h2, .purpleTxt{
+  color:#A773B0;
+
+}
+.section2 img{
+  
+  width: 250px;
+  transition: all 0.3s ease;
+}
+
+.section2 img:hover {
+  width:260px;
+  transition: all 0.3s ease;
+}
+.divImg{ 
+  margin-top: 20px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+
+}
+
+.purpleButton{
+  margin-bottom: 20px;
+  border: solid 1px white;
+}
+.imgPourquoi {
+  width: 75%;
+  margin: auto;
+}
+
+@media (min-width:1000px){
+
+.section2{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding:0 7%;
+
+}
+
+.texte{
+  box-sizing: border-box;
+  width: 40%;
+  padding-right: 20px;
+}
+
+
+.divImg{ 
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.purpleButton {
+  margin-bottom: 100px;
+}
+/* .backgroundImg {
+  position: absolute;
+} */
+/* .color{
+  width: 300px;
+  height: 400px;
+  background-color: orange;
+} */
+/* Section Pourquoi Nous Choisir */
+.imgPourquoi {
+  width: 500px;
+}
+
+}
+
+
