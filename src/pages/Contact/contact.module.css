@@ -1,0 +1,6 @@
+.root {
+  margin-top: 80px;
+  height: calc(
+    100vh - 200px - 140px
+  ); /* 200px = footer height, 140px = header height */
+}

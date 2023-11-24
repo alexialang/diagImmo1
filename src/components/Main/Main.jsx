@@ -1,15 +1,16 @@
 import { Routes, Route } from "react-router-dom";
-import { Home } from "../Pages/Home/Home";
-import { Contact } from "../pages/Contact/Contact";
-import styles from "./main.module.css";
+import { Home } from "../../Pages/Home/Home";
+import { Contact } from "../../pages/Contact/Contact";
+import { Footer } from "../Footer/Footer";
 
 export const Main = () => {
   return (
-    <div className={styles.main}>
+    <div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </div>
   );
 };

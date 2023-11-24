@@ -1,6 +1,6 @@
 /* Section Image Panoramique */
-.firstImage{
-  background-image:url(../../assets/imagePanoHome.png);
+.firstImage {
+  background-image: url(../../assets/imagePanoHome.png);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -8,56 +8,66 @@
   display: flex;
   justify-content: center;
   align-items: end;
-  
 }
 .buttonFirstImg {
- margin-bottom: 40px;
- border-color: white;
+  margin-bottom: 40px;
+  border-color: white;
 }
 .buttonFirstImg:hover {
-  border-color: white;}
+  border-color: white;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 6px;
+}
 
 /* Section 2 */
 
-.section2{ background-color:#f1eeee;
+.section2 {
+  background-color: #f1eeee;
 }
 
-.texte h2, .purpleTxt{
-  color:#A773B0;
-
+.texte h2,
+.purpleTxt {
+  color: #a773b0;
 }
-.section2 img{
-  
+.section2 img {
   width: 250px;
   transition: all 0.3s ease;
 }
 
 .section2 img:hover {
-  width:260px;
+  width: 260px;
   transition: all 0.3s ease;
 }
-.divImg{ 
+.divImg {
   margin-top: 20px;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
-
 }
-.linkTxt{
-  color:black;
-}
-
-.linkTxt:hover{
-  color:rgb(59, 57, 57);
+.linkTxt {
+  color: black;
 }
 
-.purpleButton{
+.linkTxt:hover {
+  color: rgb(59, 57, 57);
+}
+
+.purpleButton {
   margin-bottom: 20px;
   border: solid 1px white;
+  &:hover {
+    border: solid 1px white;
+  }
+  &:focus {
+    outline: none;
+  }
 }
-.purpleButton:hover{
-  border: solid 1px white;
-}
+
 /* Section Pourquoi */
 .imgPourquoi {
   width: 75%;
@@ -65,72 +75,64 @@
 }
 
 /* Derniere Section */
-.titleLastSection{
-  color: #D78E01;
+.titleLastSection {
+  color: #d78e01;
 }
-.txtLastSection{
+.txtLastSection {
   background-color: #f1eeee;
 }
 
-@media (min-width:1000px){
-
+@media (min-width: 1000px) {
   /* Section 2 */
 
-.section2{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  padding:0 7%;
+  .section2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 7%;
+  }
 
-}
+  .texte {
+    box-sizing: border-box;
+    width: 40%;
+    padding-right: 20px;
+  }
 
-.texte{
-  box-sizing: border-box;
-  width: 40%;
-  padding-right: 20px;
-}
+  .divImg {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-
-.divImg{ 
-  width: 60%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-
-}
-
-.purpleButton {
-  margin-bottom: 100px;
-}
-/* .backgroundImg {
+  .purpleButton {
+    margin-bottom: 100px;
+  }
+  /* .backgroundImg {
   position: absolute;
 } */
-/* .color{
+  /* .color{
   width: 300px;
   height: 400px;
   background-color: orange;
 } */
 
+  /* Section Pourquoi Nous Choisir */
+  .imgPourquoi {
+    width: 500px;
+    margin-top: 70px;
+  }
 
-/* Section Pourquoi Nous Choisir */
-.imgPourquoi {
-  width: 500px;
-  margin-top: 70px;
+  /* Last Section */
+
+  .lastSection {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    margin: auto;
+  }
+  .lastSection img {
+    width: 400px;
+  }
 }
-
-/* Last Section */
-
-.lastSection{
-  display: flex;
-  flex-direction: row;
-  width: 75%;
-  margin: auto;
-}
-.lastSection img{
-  width: 400px;
-}
-
-}
-
-

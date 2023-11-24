@@ -1,3 +1,5 @@
+import classes from "./contact.module.css";
+
 export const Contact = () => {
-  return <div> Contact</div>;
+  return <div className={classes.root}> Contact</div>;
 };
