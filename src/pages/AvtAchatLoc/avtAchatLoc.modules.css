@@ -1,0 +1,8 @@
+.coucou {
+  background-image: url(../../assets/imagePanoAchatLoc.jpg);
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+
+}
