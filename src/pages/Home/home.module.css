@@ -1,6 +1,6 @@
 /* Section Image Panoramique */
 .firstImage {
-  background-image: url(../../assets/imagePanoHome.png);
+  background-image: url(../../assets/imagePano1.png);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -11,23 +11,28 @@
 }
 .buttonFirstImg {
   margin-bottom: 40px;
+  background-color:#a773b0ca;
   border-color: white;
 }
 .buttonFirstImg:hover {
   border-color: white;
 }
 
-.button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  column-gap: 6px;
-}
 
 /* Section 2 */
 
 .section2 {
   background-color: #f1eeee;
+}
+
+.li{
+  padding-left: 10px;
+}
+
+.texte h2{
+  margin-top: 50px;
+  font-size: 30px;
+  margin-bottom: 0;
 }
 
 .texte h2,
@@ -48,7 +53,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  column-gap: 20px;
+  margin-left: 100px;
 }
+
 .linkTxt {
   color: black;
 }
@@ -68,6 +76,38 @@
   }
 }
 
+/* Section deux images achat et loc  */
+.boxTxtImg{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.divSize{
+  height: 250px;
+   width: 250px;
+}
+
+.colorBlock{
+  width: 200px;
+  height: 240px;
+  background-color: #ffc149;
+  position: relative;
+}
+
+.imgHouse{
+             
+  position: absolute;
+  top: 40%;
+  left: 60px;
+  transform: translate(-50%, -50%);
+}
+
+.imgHands{
+  position: absolute;
+  top: 40%;
+  left: 60px;
+  transform: translate(-50%, -50%);
+}
 
 /* Section Pourquoi */
 .imgPourquoi {

@@ -15,30 +15,28 @@ export const Home = () => {
             color="yellow"
             size="xl"
             radius="xl"
+            rightSection={<ChevronRightIcon />}
           >
-            Demande De Devis
-          </Button>{" "}
+            Demande de Devis
+          </Button>
         </Link>
       </div>
       {/* Section Nos Services */}
       <div className={styles.section2}>
         <div className={styles.texte}>
           <h2>Nos Services</h2>
-          <p>Tous les diagnostics immobiliers proposés</p>
-          <ul>
-            <li>DPE (Diagnostic Performance Energétique)</li>
-            <li>Audit énergétique</li>
-            <li>Audit énergétique</li>
-            <li>
-              Diagnostic Amiante Location, Vente, Avant travaux, Après travaux
-              et démolition
-            </li>
-            <li>Surface habitable</li>
-            <li>Superficie Carrez</li>
-            <li>Diagnostic Gaz</li>
-            <li>Electricité</li>
-            <li>Diagnostic Plomb (CREP)</li>
-          </ul>
+          <p>Tous les diagnostics immobiliers proposés :</p>
+          <p className={styles.li}>· DPE (Diagnostic Performance Energétique)<br/>
+          · Audit énergétique<br/>
+          · Diagnostic Amiante Location, Vente<br/>
+          · ERP <br/>
+          · Surface habitable<br/>
+          · Superficie Carrez<br/>
+          · Diagnostic Gaz<br/>
+          · Electricité<br/>
+          · DTG<br/>
+          · Diagnostic Plomb (CREP)
+        </p>
           <p className={styles.purpleTxt}>
             Besoin d’un DEVIS diagnostic immobilier ?
           </p>
@@ -54,43 +52,27 @@ export const Home = () => {
           </Link>
         </div>
         <div className={styles.divImg}>
-          <Link to="/">
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                flexDirection: "column",
-              }}
-            >
-              <div style={{ height: "190px", width: "250px" }}>
-                <div
-                  style={{
-                    width: "200px",
-                    height: "200px",
-                    backgroundColor: "#ffc149",
-                    position: "relative",
-                  }}
-                >
-                  <img
-                    src="/src/assets/maison2.png"
+          <Link to="/obligations_achat">
+            <div className={styles.boxTxtImg}>
+              <div className={styles.divSize}>
+                <div className={styles.colorBlock}>
+                  <img className={styles.imgHouse} src="/src/assets/maison3.png"
                     alt="photo d'une maison"
-                    style={{
-                      position: "absolute",
-                      top: "50%",
-                      left: "60px",
-                      transform: "translate(-50%, -50%)",
-                    }}
                   />
                 </div>
               </div>
               <h3 className={styles.linkTxt}>Vos obligations d’Achat</h3>
             </div>
           </Link>
-          <Link to="/">
-            <div>
-              <img src="/src/assets/poigneeMain.png" alt="poignée de main" />
+          <Link to="/obligations_location">
+          <div className={styles.boxTxtImg}>
+            <div className={styles.divSize}>
+              <div className={styles.colorBlock}>
+                <img className={styles.imgHands} src="/src/assets/poigneeMains.png" alt="poignée de main" />
+              </div>
+            </div>
               <h3 className={styles.linkTxt}>Vos obligations de Location</h3>
-            </div>{" "}
+          </div>
           </Link>
         </div>
         <div className={styles.backgroundImg}>
