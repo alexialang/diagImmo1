@@ -10,7 +10,7 @@ export const LoiBoutin = () => {
       <p>Loi Boutin</p></div> 
       </div>
     <div className={styles.txt} >
-    <p>Bienvenue chez [Nom de votre entreprise], votre partenaire de confiance pour tous vos besoins en diagnostics immobiliers. Nous comprenons l’importance de garantir la transparence et la conformité dans le domaine de la location immobilière, et c’est pourquoi nous mettons en avant notre expertise en matière de Loi Boutin.</p>
+    <p>Bienvenue chez  GPADI, votre partenaire de confiance pour tous vos besoins en diagnostics immobiliers. Nous comprenons l’importance de garantir la transparence et la conformité dans le domaine de la location immobilière, et c’est pourquoi nous mettons en avant notre expertise en matière de Loi Boutin.</p>
 
 <h2>Qu’est-ce que la Loi Boutin ?</h2>
 <p>La Loi Boutin stipule l’obligation de mesurer avec précision la surface habitable de tout bien immobilier loué. Conçue pour protéger les locataires en garantissant une information transparente, cette réglementation exige un mesurage spécifique, différent de celui utilisé lors de la vente des parties de copropriété. Chez [Nom de votre entreprise], nous sommes là pour vous guider à travers ce processus détaillé.</p>
@@ -23,7 +23,7 @@ export const LoiBoutin = () => {
 <h2>Notre Engagement envers la Conformité</h2>
 <p>En tant que diagnostiqueurs immobiliers expérimentés, nous nous engageons à assurer la conformité totale avec la Loi Boutin. Notre équipe d’experts est formée pour effectuer des mesures précises de la totalité du bien loué, excluant uniquement certains espaces spécifiés par la loi. Nous sommes là pour simplifier ce processus complexe et garantir que votre contrat de location respecte les normes les plus strictes.</p>
 
-<h2>Pourquoi Choisir [Nom de votre entreprise] pour votre Mesurage Boutin ?</h2>
+<h2>Pourquoi nous choisir pour votre Mesurage Boutin ?</h2>
 <p>· Expertise Approfondie : Nos diagnostiqueurs sont formés aux spécificités de la Loi Boutin et sont experts dans la réalisation de mesurages précis.<br/><br/>
 
 · Conseils Personnalisés : Besoin de conseils sur la Loi Boutin ? Notre équipe est là pour répondre à toutes vos questions et vous fournir les informations nécessaires.<br/><br/>

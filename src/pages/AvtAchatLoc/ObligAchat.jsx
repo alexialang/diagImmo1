@@ -10,7 +10,7 @@ export const ObligAchat = () => {
       <p>Vos Obligations d’Achat</p></div> 
       </div>
     <div className={styles.txt} >
-<p>Bienvenue sur notre page dédiée aux diagnostics immobiliers obligatoires pour les achats avec [Nom de votre entreprise]. Nous comprenons l’importance de vous fournir des informations claires et précises pour garantir une acquisition en toute conformité. Découvrez ci-dessous les principaux diagnostics immobiliers obligatoires que vous devez connaître lors d’un achat.</p>
+<p>Bienvenue sur notre page dédiée aux diagnostics immobiliers obligatoires pour les achats avec  GPADI. Nous comprenons l’importance de vous fournir des informations claires et précises pour garantir une acquisition en toute conformité. Découvrez ci-dessous les principaux diagnostics immobiliers obligatoires que vous devez connaître lors d’un achat.</p>
 
 <h2>Diagnostics Obligatoires pour les Achats</h2>
 
@@ -41,7 +41,7 @@ export const ObligAchat = () => {
 <p> Le diagnostic plomb est obligatoire pour les biens construits avant le 1er janvier 1949.</p>
 </div>
 
-<p>Chez [Nom de votre entreprise], nous sommes là pour vous accompagner à travers ces démarches. N’hésitez pas à nous contacter pour obtenir des conseils personnalisés et des devis adaptés à vos besoins spécifiques lors de l’achat d’un bien immobilier. Garantissez une acquisition en toute tranquillité et conformité avec nos services de diagnostics immobiliers.</p>
+<p>Chez  GPADI, nous sommes là pour vous accompagner à travers ces démarches. N’hésitez pas à nous contacter pour obtenir des conseils personnalisés et des devis adaptés à vos besoins spécifiques lors de l’achat d’un bien immobilier. Garantissez une acquisition en toute tranquillité et conformité avec nos services de diagnostics immobiliers.</p>
     <div>
     <Link to="/devis">
           <Button

@@ -10,7 +10,7 @@ export const LoiCarez = () => {
       <p>Loi Carez</p></div> 
       </div>
     <div className={styles.txt} >
-    <p>Bienvenue chez [Nom de votre entreprise], votre partenaire de confiance pour tous vos besoins en diagnostics immobiliers. Nous comprenons l’importance de garantir la transparence et la conformité dans le domaine de la location immobilière, et c’est pourquoi nous mettons en avant notre expertise en matière de Loi Carrez.</p>
+    <p>Bienvenue chez  GPADI, votre partenaire de confiance pour tous vos besoins en diagnostics immobiliers. Nous comprenons l’importance de garantir la transparence et la conformité dans le domaine de la location immobilière, et c’est pourquoi nous mettons en avant notre expertise en matière de Loi Carrez.</p>
 
 <h2>Qu’est-ce que la Loi Carrez ?</h2>
 <p>La Loi Carrez impose la mention précise de la superficie privative d’un bien immobilier en copropriété lors de la vente. Cette réglementation a été instaurée pour protéger les acquéreurs en assurant une information claire sur la surface réelle du bien. Chez [Nom de votre entreprise], nous sommes là pour vous accompagner dans cette démarche essentielle.</p>
@@ -23,12 +23,12 @@ export const LoiCarez = () => {
 <h2>Notre Engagement envers la Conformité</h2>
 <p>En tant que diagnostiqueurs immobiliers expérimentés, nous nous engageons à assurer la conformité totale avec la Loi Carrez. Notre équipe d’experts est formée pour effectuer des mesures précises de la superficie privative, excluant uniquement certains espaces spécifiés par la loi. Nous sommes là pour garantir que votre transaction immobilière respecte les normes les plus strictes.</p>
 
-<h2>Pourquoi Choisir [Nom de votre entreprise] pour votre Mesurage Carrez ?</h2>
+<h2>Pourquoi nous choisir pour votre Mesurage Carrez ?</h2>
 <p>Expertise Approfondie : Nos diagnostiqueurs sont formés aux spécificités de la Loi Carrez et sont experts dans la réalisation de mesurages précis.<br/>
 
 Conseils Personnalisés : Besoin de conseils sur la Loi Carrez ? Notre équipe est là pour répondre à toutes vos questions et vous fournir les informations nécessaires.<br/>
 
-Minimisation des Risques : Avec [Nom de votre entreprise], minimisez les risques liés à une déclaration incorrecte de la superficie, assurant ainsi une transaction immobilière en toute confiance.</p>
+Minimisation des Risques : Avec  GPADI, minimisez les risques liés à une déclaration incorrecte de la superficie, assurant ainsi une transaction immobilière en toute confiance.</p>
 
 <p className={styles.txtColor}>Besoin d’un DEVIS pour votre diagnostic immobilier Loi Carrez ? Contactez-nous dès Aujourd’hui</p>
     <div>

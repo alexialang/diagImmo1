@@ -5,11 +5,13 @@ import { Button } from "@mantine/core";
 export const Header = () => {
   return (
     <div className={styles.root}>
+      <div className={styles.imgS}>
       <img
         className={styles.logo}
         src="/src/assets/logo.png"
         alt="logo de l'entreprise"
       />
+      </div>
       <div className={styles.nav}>
         <Link to="/">
           <Button variant="subtle">Accueil</Button>

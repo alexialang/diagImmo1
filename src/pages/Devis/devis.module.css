@@ -1,0 +1,11 @@
+.imgPano {
+  background-image: url(../../assets/devis.png);
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}

@@ -82,16 +82,42 @@ export const Home = () => {
       </div>
 
       {/* Section Pourquoi Nous Choisir */}
-      <div>
-        <img
-          className={styles.imgPourquoi}
-          src="src/assets/batimentMetz.png"
-          alt="Batiment en pierres jaunes et Batiment en pierre rouge"
-        />
-      </div>
       <div className={styles.divPourquoi}>
-        <h2>Pourquoi Nous Choisir ?</h2>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        <div>
+          <img
+            className={styles.imgPourquoi}
+            src="src/assets/batimentMetz.png"
+            alt="Batiment en pierres jaunes et Batiment en pierre rouge"
+          />
+        </div>
+        <div className={styles.txtPourquoi}>
+          <div className={styles.titlePourquoi}>
+            <h2>Pourquoi Nous Choisir ?</h2>
+            <p> Nous sommes là pour faciliter vos transactions immobilières en fournissant des informations précises et fiables sur l’état de votre bien.</p>
+          </div>
+          <div className={styles.fourBlock}>
+           <div className={styles.column }>
+            <div>
+              <div className={styles.row }><img src="/src/assets/check.png"/><h3>Expertise Approfondie</h3></div>
+              <p>Bénéficiez de l’expérience de diagnostiqueurs certifiés, experts dans la réalisation de diagnostics conformes aux normes en vigueur.</p>
+            </div>
+            <div>
+              <div className={styles.row }><img src="/src/assets/check.png"/><h3>Conseils Personnalisés </h3></div>
+              <p>Profitez de conseils personnalisés pour répondre à vos besoins spécifiques, que ce soit pour la localisation, la vente, ou l’achat d’un bien immobilier.</p>
+            </div>
+            </div> 
+          <div className={styles.column} >
+            <div>
+            <div className={styles.row }><img src="/src/assets/check.png"/><h3>Minimisation des Risques : </h3></div>
+              <p>Choisissez la tranquillité d’esprit en minimisant les risques liés aux diagnostics, grâce à une approche précise et rigoureuse.</p>
+              </div>
+              <div>
+              <div className={styles.row }><img src="/src/assets/check.png"/><h3>Approche Personnalisée : </h3></div>
+                <p>Notre service personnalisé est adapté à vos besoins spécifiques, que vous soyez vendeur, acheteur, ou professionnel de l’immobilier, pour une expérience transparente et sur mesure.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Section Obligation Moselle */}
@@ -101,34 +127,14 @@ export const Home = () => {
             Quelles sont mes obligations de diagnostics immobiliers sur Metz
             (MOSELLE) ?
           </h2>
-          <ul>
-            <li>
-              Le diagnostic amiante est obligatoire si le permis de construire a
-              été déposé avant 1997 (MOSELLE)
-            </li>
-            <li>Le DPE est obligatoire</li>
-            <li>
-              Le diagnostic plomb est obligatoire si le permis de construire
-              date d’avant 1949
-            </li>
-            <li>
-              Le diagnostic électrique est obligatoire si l’installation date de
-              plus de quinze ans
-            </li>
-            <li>
-              Le diagnostic gaz est obligatoire si l’installation date de plus
-              de quinze ans
-            </li>
-            <li>
-              Le diagnostic termites est obligatoire si un arrêté préfectoral
-              (sur le département MOSELLE) ou communal (sur Metz) le prescrit
-            </li>
-            <li>
-              Le métrage Loi Carrez est obligatoire si le bien est en
-              copropriété
-            </li>
-            <li>L’Etat des Risques Pollution des sols (ERP) est obligatoire</li>
-          </ul>
+          <p>· Le diagnostic amiante est requis lorsque le permis de construire a été déposé avant 1997 dans le département de la Moselle.<br/>
+          · Le DPE (Diagnostic de Performance Énergétique) est une obligation.<br/>
+          · Le diagnostic plomb est obligatoire pour les constructions antérieures à 1949.<br/>
+          · Le diagnostic électrique est nécessaire si l’installation a plus de quinze ans.<br/>
+          · Le diagnostic gaz est obligatoire pour les installations de plus de quinze ans.<br/>
+          · Le diagnostic termites est exigé si un arrêté préfectoral (dans le département de la Moselle) ou communal (à Metz) le prescrit.<br/>
+          · Le métrage Loi Carrez est requis pour les biens en copropriété.<br/>
+          · L’État des Risques Pollution des sols (ERP) est une obligation à respecter.</p>
         </div>
         <img src="/src/assets/cathe.png" />
       </div>

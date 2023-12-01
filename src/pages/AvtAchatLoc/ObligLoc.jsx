@@ -11,7 +11,7 @@ export const ObligLoc = () => {
       </div>
     <div className={styles.txt} >
     
-    <p>Bienvenue sur notre page dédiée aux obligations de diagnostics immobiliers pour la location avec [Nom de votre entreprise]. Nous comprenons l’importance de vous fournir des informations claires et précises pour garantir une location en toute conformité. Découvrez ci-dessous les principales obligations de diagnostics immobiliers que vous devez connaître.</p>
+    <p>Bienvenue sur notre page dédiée aux obligations de diagnostics immobiliers pour la location avec  GPADI. Nous comprenons l’importance de vous fournir des informations claires et précises pour garantir une location en toute conformité. Découvrez ci-dessous les principales obligations de diagnostics immobiliers que vous devez connaître.</p>
 
 <h2>Diagnostics Obligatoires pour la Location</h2>
 
@@ -50,7 +50,7 @@ export const ObligLoc = () => {
 <p>Le diagnostic plomb est obligatoire pour les biens construits avant le 1er janvier 1949.</p>
 </div>
 
-<p>Nous chez [Nom de votre entreprise], nous sommes là pour vous accompagner à travers ces démarches. N’hésitez pas à nous contacter pour obtenir des conseils personnalisés et des devis adaptés à vos besoins. Garantissez une location en toute tranquillité et conformité avec nos services de diagnostics immobiliers.</p>
+<p>Nous chez GPADI, nous sommes là pour vous accompagner à travers ces démarches. N’hésitez pas à nous contacter pour obtenir des conseils personnalisés et des devis adaptés à vos besoins. Garantissez une location en toute tranquillité et conformité avec nos services de diagnostics immobiliers.</p>
 
     <div>
     <Link to="/devis">

@@ -13,7 +13,7 @@ export const Amiante = () => {
       </div>
     </div>
   <div className={styles.txt} >
-    Bienvenue chez [Nom de votre entreprise], votre partenaire de confiance pour tous vos besoins en diagnostics immobiliers. Nous comprenons l’importance de garantir la sécurité et la conformité dans le domaine de la localisation immobilière, et c’est pourquoi nous mettons en avant notre expertise en matière de diagnostic Amiante.
+    Bienvenue chez GPADI, votre partenaire de confiance pour tous vos besoins en diagnostics immobiliers. Nous comprenons l’importance de garantir la sécurité et la conformité dans le domaine de la localisation immobilière, et c’est pourquoi nous mettons en avant notre expertise en matière de diagnostic Amiante.
 
 <h2>Qu’est-ce que le Diagnostic Amiante ?</h2>
 <p>Le diagnostic Amiante est une étape essentielle lors de la vente ou de la localisation d’un bien immobilier construit avant le 1er juillet 1997. Il vise à détecter la présence éventuelle d’amiante, un matériau dangereux pour la santé, permettant ainsi d’assurer la sécurité des occupants.</p>
@@ -26,14 +26,14 @@ export const Amiante = () => {
 <p>La validité du diagnostic Amiante est de 3 ans. Une mise à jour est nécessaire si des travaux susceptibles de libérer de l’amiante ont été effectués.</p>
 
 <h2>Notre Engagement envers la Conformité</h2>
-<p>Chez [Nom de votre entreprise], nous nous engageons à assurer une totale conformité avec les exigences du diagnostic Amiante. Nos diagnostiqueurs expérimentés sont formés pour détecter toute présence d’amiante et fournir des recommandations appropriées.</p>
+<p>Chez  GPADI, nous nous engageons à assurer une totale conformité avec les exigences du diagnostic Amiante. Nos diagnostiqueurs expérimentés sont formés pour détecter toute présence d’amiante et fournir des recommandations appropriées.</p>
 
-<h2>Pourquoi Choisir [Nom de votre entreprise] pour votre Diagnostic Amiante ?</h2>
+<h2>Pourquoi nous choisir pour votre Diagnostic Amiante ?</h2>
 <p>· Expertise Approfondie : Nos diagnostiqueurs sont certifiés et experts dans la réalisation de diagnostics Amiante conforme aux normes en vigueur.<br/>
 
 · Conseils Personnalisés : Besoin de conseils sur les démarches à suivre en cas de présence d’amiante ? Notre équipe est là pour vous guider.<br/>
 
-· Minimisation des Risques : En concevant [Nom de votre entreprise], minimisez les risques sûrs liés à la présence d’amiante, assurant ainsi un environnement pour les occupants.</p>
+· Minimisation des Risques : En choisissant  GPADI, minimisez les risques sûrs liés à la présence d’amiante, assurant ainsi un environnement pour les occupants.</p>
 
 <p className={styles.txtColor}>Besoin d’un DEVIS pour votre diagnostic immobilier Amiante ? Contactez-nous dès Aujourd’hui!</p>
     <div>

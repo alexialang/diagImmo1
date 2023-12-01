@@ -11,6 +11,7 @@ import { Amiante } from "../../pages/AvtAchatLoc/Amiante";
 import { DiagGaz } from "../../pages/AvtAchatLoc/DiagGaz";
 import { ObligAchat } from "../../pages/AvtAchatLoc/ObligAchat";
 import { ObligLoc } from "../../pages/AvtAchatLoc/ObligLoc";
+import { Devis} from "../../pages/Devis/Devis";
 
 import { Footer } from "../Footer/Footer";
 
@@ -30,6 +31,7 @@ export const Main = () => {
         <Route path="/diag_gaz" element={<DiagGaz/>} />
         <Route path="/obligations_achat" element={<ObligAchat/>} />
         <Route path="/obligations_location" element={<ObligLoc/>} />
+        <Route path="/devis" element={<Devis/>} />
       </Routes>
       <Footer />
     </div>
