@@ -1,16 +1,11 @@
 import styles from "./devis.module.css";
 import { useForm } from "@mantine/form";
-import {
-  TextInput,
-  Checkbox,
-  Button,
-  Group,
-  Box,
-  Select,
-  Radio,
-} from "@mantine/core";
+import { TextInput, Button, Group, Box, Select, Radio } from "@mantine/core";
+import emailJs from "@emailjs/browser";
 
 export const Devis = () => {
+  emailJs.init("yij5B0qq7jkBd8l4B");
+
   const form = useForm({
     initialValues: {
       type: "",
@@ -37,6 +32,28 @@ export const Devis = () => {
     },
   });
 
+  const sendEmail = (values) => {
+    emailJs.send("service_j6i38ke", "template_64iijd5", {
+      type: values.type,
+      wish: values.wish,
+      electric15: values.electric15,
+      gaz15: values.gaz15,
+      rooms: values.rooms,
+      surface: values.surface,
+      constructionDate: values.constructionDate,
+      heating: values.heating,
+      gazType: values.gazType,
+      coOwnership: values.coOwnership,
+      adress: values.adress,
+      postalCode: values.postalCode,
+      city: values.city,
+      moreInfo: values.moreInfo,
+      firstName: values.firstName,
+      lastName: values.lastName,
+      email: values.email,
+    });
+  };
+
   return (
     <div className={styles.root}>
       <div className={styles.imgPano}></div>
@@ -52,8 +69,8 @@ export const Devis = () => {
       >
         <div>Votre bien</div>
         <div>
-          <Box mx="auto">
-            <form onSubmit={form.onSubmit((values) => console.log(values))}>
+          <Box>
+            <form onSubmit={form.onSubmit(sendEmail)}>
               <Select
                 label="Type de bien..."
                 placeholder="Type de bien..."
@@ -69,10 +86,12 @@ export const Devis = () => {
                   "Autre",
                 ]}
                 {...form.getInputProps("type")}
+                required
               />
               <Radio.Group
                 label="Vous souhaitez"
                 withAsterisk
+                required
                 {...form.getInputProps("wish")}
               >
                 <Group>
@@ -81,6 +100,7 @@ export const Devis = () => {
                 </Group>
               </Radio.Group>
               <Radio.Group
+                required
                 label="Installation elec +15ans"
                 withAsterisk
                 {...form.getInputProps("electric15")}
@@ -92,6 +112,7 @@ export const Devis = () => {
               </Radio.Group>
               <Select
                 withAsterisk
+                required
                 label="Nombre de pièces..."
                 placeholder="Nombre de pièces..."
                 data={[
@@ -113,6 +134,7 @@ export const Devis = () => {
                 label="Installation gaz +15ans"
                 withAsterisk
                 {...form.getInputProps("gaz15")}
+                required
               >
                 <Group>
                   <Radio label="Oui" value="yes" />
@@ -123,6 +145,7 @@ export const Devis = () => {
                 withAsterisk
                 label="Surface habitable m²"
                 {...form.getInputProps("surface")}
+                required
               />
               <Select
                 withAsterisk
@@ -136,6 +159,7 @@ export const Devis = () => {
                   "Je ne sais pas",
                 ]}
                 {...form.getInputProps("constructionDate")}
+                required
               />
               <Select
                 withAsterisk
@@ -150,6 +174,7 @@ export const Devis = () => {
                   "Je ne sais pas",
                 ]}
                 {...form.getInputProps("heating")}
+                required
               />
               <Select
                 withAsterisk
@@ -165,10 +190,12 @@ export const Devis = () => {
                   "Je ne sais pas",
                 ]}
                 {...form.getInputProps("gazType")}
+                required
               />
               <Radio.Group
                 label="Copropriété"
                 withAsterisk
+                required
                 {...form.getInputProps("coOwnership")}
               >
                 <Group>
@@ -182,23 +209,27 @@ export const Devis = () => {
                 label="Adresse"
                 autoComplete="street-address"
                 {...form.getInputProps("adress")}
+                required
               />
               <TextInput
                 withAsterisk
                 label="Code postal"
                 autoComplete="postal-code"
                 {...form.getInputProps("postalCode")}
+                required
               />
               <TextInput
                 withAsterisk
                 label="Ville"
                 autoComplete="address-level2"
                 {...form.getInputProps("city")}
+                required
               />
               <TextInput
                 label="Informations complémentaires"
                 placeholder="Informations complémentaires"
                 {...form.getInputProps("moreInfo")}
+                required
               />
               <TextInput
                 withAsterisk
@@ -206,6 +237,7 @@ export const Devis = () => {
                 placeholder="Prénom"
                 autoComplete="given-name"
                 {...form.getInputProps("firstName")}
+                required
               />
               <TextInput
                 withAsterisk
@@ -213,6 +245,7 @@ export const Devis = () => {
                 placeholder="Nom"
                 autoComplete="family-name"
                 {...form.getInputProps("lastName")}
+                required
               />
               <TextInput
                 withAsterisk
