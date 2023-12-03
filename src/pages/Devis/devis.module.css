@@ -1,6 +1,3 @@
-.root {
-  margin-top: 80px;
-}
 
 .imgPano {
   background-image: url(../../assets/devis.png);
@@ -11,4 +8,63 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.divForm{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.marginTop{
+  margin-top: 10px;
+  margin: 10px 20px;
+}
+
+.colorBox{
+  padding: 6px 100px;
+  background-color:#e09b14;
+  margin-top: 30px;
+}
+.colorBox2{
+  padding: 6px 4px;
+  background-color:#e09b14;
+  margin-top: 30px;
+}
+.colorBox2 h2{
+  color: white;
+  margin: 0;
+  font-weight: 300;
+}
+
+.colorBox h2{
+  color: white;
+  margin: 0;
+  font-weight: 300;
+}
+
+@media (min-width: 1000px) {
+  .divForm{
+    width: 100%;
+
+  }
+  .root {
+    margin-top: 80px;
+  }
+  .colorBox{
+    padding: 6px 200px;
+    background-color:#e09b14;
+    margin-top: 30px;
+  }
+  .colorBox2{
+    padding: 6px 100px;
+    background-color:#e09b14;
+    margin-top: 30px;
+  }
+  .marginTop{
+    margin-top: 10px 0;
+  }
+
 }

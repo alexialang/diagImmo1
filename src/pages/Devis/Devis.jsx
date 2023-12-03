@@ -57,21 +57,14 @@ export const Devis = () => {
   return (
     <div className={styles.root}>
       <div className={styles.imgPano}></div>
-      <div
-        style={{
-          marginTop: "60px",
-          width: "100%",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          rowGap: "20px",
-        }}
+      <div className={styles.divForm}
       >
-        <div>Votre bien</div>
+        <div className={styles.colorBox}><h2>Votre bien</h2></div>
         <div>
           <Box>
             <form onSubmit={form.onSubmit(sendEmail)}>
-              <Select
+              <Select 
+                className={styles.marginTop} 
                 label="Type de bien..."
                 placeholder="Type de bien..."
                 data={[
@@ -88,7 +81,7 @@ export const Devis = () => {
                 {...form.getInputProps("type")}
                 required
               />
-              <Radio.Group
+              <Radio.Group className={styles.marginTop}
                 label="Vous souhaitez"
                 withAsterisk
                 required
@@ -100,6 +93,7 @@ export const Devis = () => {
                 </Group>
               </Radio.Group>
               <Radio.Group
+                className={styles.marginTop} 
                 required
                 label="Installation elec +15ans"
                 withAsterisk
@@ -110,7 +104,8 @@ export const Devis = () => {
                   <Radio label="Non" value="no" />
                 </Group>
               </Radio.Group>
-              <Select
+              <Select 
+                className={styles.marginTop}
                 withAsterisk
                 required
                 label="Nombre de pièces..."
@@ -131,6 +126,7 @@ export const Devis = () => {
                 {...form.getInputProps("rooms")}
               />
               <Radio.Group
+                className={styles.marginTop}
                 label="Installation gaz +15ans"
                 withAsterisk
                 {...form.getInputProps("gaz15")}
@@ -142,12 +138,14 @@ export const Devis = () => {
                 </Group>
               </Radio.Group>
               <TextInput
+                className={styles.marginTop}
                 withAsterisk
                 label="Surface habitable m²"
                 {...form.getInputProps("surface")}
                 required
               />
               <Select
+                className={styles.marginTop}
                 withAsterisk
                 label="Date de construction"
                 placeholder="Date de construction"
@@ -162,6 +160,7 @@ export const Devis = () => {
                 required
               />
               <Select
+                className={styles.marginTop}
                 withAsterisk
                 label="Chauffage"
                 placeholder="Chauffage"
@@ -177,6 +176,7 @@ export const Devis = () => {
                 required
               />
               <Select
+                className={styles.marginTop}
                 withAsterisk
                 label="Gaz"
                 placeholder="Gaz"
@@ -193,6 +193,7 @@ export const Devis = () => {
                 required
               />
               <Radio.Group
+                className={styles.marginTop}
                 label="Copropriété"
                 withAsterisk
                 required
@@ -205,6 +206,7 @@ export const Devis = () => {
                 </Group>
               </Radio.Group>
               <TextInput
+                className={styles.marginTop}
                 withAsterisk
                 label="Adresse"
                 autoComplete="street-address"
@@ -212,6 +214,7 @@ export const Devis = () => {
                 required
               />
               <TextInput
+                className={styles.marginTop}
                 withAsterisk
                 label="Code postal"
                 autoComplete="postal-code"
@@ -219,6 +222,7 @@ export const Devis = () => {
                 required
               />
               <TextInput
+                className={styles.marginTop}
                 withAsterisk
                 label="Ville"
                 autoComplete="address-level2"
@@ -226,12 +230,15 @@ export const Devis = () => {
                 required
               />
               <TextInput
+                className={styles.marginTop}
                 label="Informations complémentaires"
                 placeholder="Informations complémentaires"
                 {...form.getInputProps("moreInfo")}
                 required
               />
+              <div className={styles.colorBox2}><h2>Vos Informations Personelles</h2></div>
               <TextInput
+                className={styles.marginTop}
                 withAsterisk
                 label="Prénom"
                 placeholder="Prénom"
@@ -240,6 +247,7 @@ export const Devis = () => {
                 required
               />
               <TextInput
+                className={styles.marginTop}
                 withAsterisk
                 label="Nom"
                 placeholder="Nom"
@@ -248,13 +256,14 @@ export const Devis = () => {
                 required
               />
               <TextInput
+                className={styles.marginTop}
                 withAsterisk
                 label="Email"
-                placeholder="your@email.com"
+                placeholder="votre@email.com"
                 {...form.getInputProps("email")}
               />
               <Group justify="flex-end" mt="md">
-                <Button type="submit">Submit</Button>
+                <Button type="submit">Envoyer</Button>
               </Group>
             </form>
           </Box>

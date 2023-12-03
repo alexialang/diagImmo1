@@ -2,6 +2,11 @@
   display: flex;
   justify-content: center;
 }
+.subItem {
+  color: #a773b0;
+  font-size: 14px;
+  font-weight: 600;
+}
 
 @media (min-width: 700px) {
   .logo {
@@ -29,9 +34,4 @@
     justify-content: center;
   }
 
-  .subItem {
-    color: #a773b0;
-    font-size: 14px;
-    font-weight: 600;
-  }
 }

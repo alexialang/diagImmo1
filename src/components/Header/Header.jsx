@@ -34,30 +34,128 @@ export const Header = () => {
             <Menu.Item
               className=""
               onClick={() => {
-                navigate("/diagnostic_immobilier");
+                navigate("/dpe");
               }}
             >
-              Item 1
+              DPE
             </Menu.Item>
             <Menu.Item
               onClick={() => {
-                navigate("/etat_parasitaire");
+                navigate("/erp");
               }}
             >
-              Item 2
+              ERP
             </Menu.Item>
             <Menu.Item
               onClick={() => {
-                navigate("/etat_des_lieux");
+                navigate("/loi_carrez");
               }}
             >
-              Item 3
+              Loi Carrez
             </Menu.Item>
-          </Menu.Dropdown>
+            <Menu.Item
+              onClick={() => {
+                navigate("/diag_gaz");
+              }}
+            >
+              Diagnostic Gaz
+            </Menu.Item>
+            <Menu.Item
+              onClick={() => {
+                navigate("/diag_plomb");
+              }}
+            >
+              Diagnostic Plomb
+            </Menu.Item>
+            <Menu.Item
+              onClick={() => {
+                navigate("/diag_electrique");
+              }}
+            >
+              Diagnostic Electrique
+            </Menu.Item>
+            <Menu.Item
+              onClick={() => {
+                navigate("/obligations_achat");
+              }}
+            >
+              Obligations de Vente
+            </Menu.Item>
+          </Menu.Dropdown> 
         </Menu>
-        <Link to="/avant_la_location">
+        <Menu
+          position="bottom"
+          trigger="hover"
+          openDelay={100}
+          closeDelay={400}
+          classNames={{
+            item: styles.subItem,
+          }}
+        >
+          <Menu.Target>
           <Button variant="subtle">Avant la location</Button>
-        </Link>
+        </Menu.Target>
+
+
+          <Menu.Dropdown>
+            <Menu.Item
+              className=""
+              onClick={() => {
+                navigate("/dpe");
+              }}
+            >
+              DPE
+            </Menu.Item>
+            <Menu.Item
+              className=""
+              onClick={() => {
+                navigate("/erp");
+              }}
+            >
+              ERP
+            </Menu.Item>
+            <Menu.Item
+              className=""
+              onClick={() => {
+                navigate("/loi_boutin");
+              }}
+            >
+              Loi Boutin
+            </Menu.Item>
+            <Menu.Item
+              className=""
+              onClick={() => {
+                navigate("/diag_gaz");
+              }}
+            >
+              Diagnostic Gaz
+            </Menu.Item>
+            <Menu.Item
+              className=""
+              onClick={() => {
+                navigate("/diag_plomb");
+              }}
+            >
+              Diagnostic Plomb
+            </Menu.Item>
+            <Menu.Item
+              className=""
+              onClick={() => {
+                navigate("/diag_electrique");
+              }}
+            >
+              Diagnostic Electrique
+            </Menu.Item>
+            <Menu.Item
+              className=""
+              onClick={() => {
+                navigate("/obligations_locations");
+              }}
+            >
+              Obligations de Locations
+            </Menu.Item>
+            </Menu.Dropdown> 
+            </Menu>
         <Link to="/autres_services">
           <Button variant="subtle">Autres Services</Button>
         </Link>

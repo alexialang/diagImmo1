@@ -8,11 +8,11 @@
 }
 
 .column{
-  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
 }
 
 .column h2{
@@ -40,4 +40,15 @@ img{
     &:hover{
       color:orange;
     }
+}
+
+
+@media (min-width: 750px){
+  .column{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+  }
 }
