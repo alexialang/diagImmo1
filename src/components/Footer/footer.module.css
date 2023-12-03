@@ -1,5 +1,5 @@
 .footer {
-  background-color:#909090;
+  background-color: #909090;
   padding: 30px 80px;
   width: 100%;
   height: auto;
@@ -7,7 +7,7 @@
   bottom: 0;
 }
 
-.column{
+.column {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,40 +15,37 @@
   column-gap: 10px;
 }
 
-.column h2{
+.column h2 {
   margin: 0;
   padding: 0;
   font-size: 15px;
   color: white;
   font-weight: 400;
-  
 }
 
-.column p{
+.column p {
   margin-top: 10px;
-  font-size:12px;
+  font-size: 12px;
   color: white;
 }
 
-img{
+img {
   width: 100px;
   margin-top: 20px;
 }
 
-.link{
+.link {
   color: white;
-    &:hover{
-      color:orange;
-    }
+  &:hover {
+    color: orange;
+  }
 }
 
-
-@media (min-width: 750px){
-  .column{
+@media (min-width: 750px) {
+  .column {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
   }
 }

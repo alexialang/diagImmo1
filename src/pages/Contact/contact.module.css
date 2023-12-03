@@ -1,11 +1,8 @@
 .root {
   margin-top: 80px;
-  height: calc(
-    100vh - 200px - 140px
-  ); /* 200px = footer height, 140px = header height */
 }
 
-.divForm{
+.divForm {
   margin-top: 60px;
   width: 100%;
   display: flex;
@@ -13,7 +10,7 @@
   align-items: center;
 }
 
-.marginTop{
+.marginTop {
   margin-top: 10px;
 }
 .imgPano {

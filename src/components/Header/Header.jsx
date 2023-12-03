@@ -81,7 +81,7 @@ export const Header = () => {
             >
               Obligations de Vente
             </Menu.Item>
-          </Menu.Dropdown> 
+          </Menu.Dropdown>
         </Menu>
         <Menu
           position="bottom"
@@ -93,9 +93,8 @@ export const Header = () => {
           }}
         >
           <Menu.Target>
-          <Button variant="subtle">Avant la location</Button>
-        </Menu.Target>
-
+            <Button variant="subtle">Avant la location</Button>
+          </Menu.Target>
 
           <Menu.Dropdown>
             <Menu.Item
@@ -154,8 +153,8 @@ export const Header = () => {
             >
               Obligations de Locations
             </Menu.Item>
-            </Menu.Dropdown> 
-            </Menu>
+          </Menu.Dropdown>
+        </Menu>
         <Link to="/autres_services">
           <Button variant="subtle">Autres Services</Button>
         </Link>

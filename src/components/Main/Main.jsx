@@ -11,7 +11,7 @@ import { Amiante } from "../../pages/AvtAchatLoc/Amiante";
 import { DiagGaz } from "../../pages/AvtAchatLoc/DiagGaz";
 import { ObligAchat } from "../../pages/AvtAchatLoc/ObligAchat";
 import { ObligLoc } from "../../pages/AvtAchatLoc/ObligLoc";
-import { Devis} from "../../pages/Devis/Devis";
+import { Devis } from "../../pages/Devis/Devis";
 
 import { Footer } from "../Footer/Footer";
 
@@ -23,15 +23,15 @@ export const Main = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/dpe" element={<Dpe />} />
         <Route path="/loi_carez" element={<LoiCarez />} />
-        <Route path="/loi_boutin" element={<LoiBoutin/>} />
-        <Route path="/diag_plomb" element={<DiagPlomb/>} />
-        <Route path="/diag_electrique" element={<DiagElec/>} />
-        <Route path="/amiante" element={<Amiante/>} />
-        <Route path="/erp" element={<Erp/>} />
-        <Route path="/diag_gaz" element={<DiagGaz/>} />
-        <Route path="/obligations_achat" element={<ObligAchat/>} />
-        <Route path="/obligations_location" element={<ObligLoc/>} />
-        <Route path="/devis" element={<Devis/>} />
+        <Route path="/loi_boutin" element={<LoiBoutin />} />
+        <Route path="/diag_plomb" element={<DiagPlomb />} />
+        <Route path="/diag_electrique" element={<DiagElec />} />
+        <Route path="/amiante" element={<Amiante />} />
+        <Route path="/erp" element={<Erp />} />
+        <Route path="/diag_gaz" element={<DiagGaz />} />
+        <Route path="/obligations_achat" element={<ObligAchat />} />
+        <Route path="/obligations_location" element={<ObligLoc />} />
+        <Route path="/devis" element={<Devis />} />
       </Routes>
       <Footer />
     </div>

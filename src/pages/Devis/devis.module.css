@@ -1,4 +1,3 @@
-
 .imgPano {
   background-image: url(../../assets/devis.png);
   height: 250px;
@@ -10,7 +9,7 @@
   align-items: center;
 }
 
-.divForm{
+.divForm {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -18,53 +17,51 @@
   row-gap: 30px;
 }
 
-.marginTop{
+.marginTop {
   margin-top: 10px;
   margin: 10px 20px;
 }
 
-.colorBox{
+.colorBox {
   padding: 6px 100px;
-  background-color:#e09b14;
+  background-color: #e09b14;
   margin-top: 30px;
 }
-.colorBox2{
+.colorBox2 {
   padding: 6px 4px;
-  background-color:#e09b14;
+  background-color: #e09b14;
   margin-top: 30px;
 }
-.colorBox2 h2{
+.colorBox2 h2 {
   color: white;
   margin: 0;
   font-weight: 300;
 }
 
-.colorBox h2{
+.colorBox h2 {
   color: white;
   margin: 0;
   font-weight: 300;
 }
 
 @media (min-width: 1000px) {
-  .divForm{
+  .divForm {
     width: 100%;
-
   }
   .root {
     margin-top: 80px;
   }
-  .colorBox{
+  .colorBox {
     padding: 6px 200px;
-    background-color:#e09b14;
+    background-color: #e09b14;
     margin-top: 30px;
   }
-  .colorBox2{
+  .colorBox2 {
     padding: 6px 100px;
-    background-color:#e09b14;
+    background-color: #e09b14;
     margin-top: 30px;
   }
-  .marginTop{
+  .marginTop {
     margin-top: 10px 0;
   }
-
 }

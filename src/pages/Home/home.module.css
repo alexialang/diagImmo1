@@ -11,13 +11,12 @@
 }
 .buttonFirstImg {
   margin-bottom: 40px;
-  background-color:#a773b0ca;
+  background-color: #a773b0ca;
   border-color: white;
 }
 .buttonFirstImg:hover {
   border-color: white;
 }
-
 
 /* Section 2 */
 
@@ -25,17 +24,17 @@
   background-color: #f1eeee;
 }
 
-.li{
+.li {
   padding-left: 15px;
   font-size: 14px;
 }
 
-.texte h2{
+.texte h2 {
   margin-top: 50px;
   font-size: 30px;
   margin-bottom: 0;
 }
-.texte{
+.texte {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,41 +85,39 @@
 }
 
 /* Section deux images achat et loc  */
-.boxTxtImg{
+.boxTxtImg {
   display: flex;
   align-items: start;
   flex-direction: column;
 }
-.divSize{
+.divSize {
   height: 250px;
-   width: 250px;
+  width: 250px;
 }
 
-.colorBlock{
+.colorBlock {
   width: 200px;
   height: 240px;
   background-color: #ffc149;
   position: relative;
 }
 
-.imgHouse{
-             
+.imgHouse {
   position: absolute;
   top: 40%;
   left: 60px;
   transform: translate(-50%, -50%);
 }
 
-.imgHands{
+.imgHands {
   position: absolute;
   top: 40%;
   left: 60px;
   transform: translate(-50%, -50%);
 }
-
 
 /* Section Pourquoi */
-.divPourquoi{
+.divPourquoi {
   display: flex;
   flex-direction: column-reverse;
 }
@@ -132,13 +129,13 @@
   justify-content: center;
   margin-bottom: 20px;
 }
- 
-.column p{
+
+.column p {
   padding-top: 5px;
   padding-left: 34px;
   font-size: 13px;
 }
-.column h3{
+.column h3 {
   padding-left: 10px;
 }
 .row {
@@ -151,14 +148,12 @@
   height: 16px;
 }
 
-.titlePourquoi h2{
+.titlePourquoi h2 {
   color: #d78e01;
 }
 .titlePourquoi p {
   font-weight: 500;
 }
-
-
 
 /* Derniere Section */
 .titleLastSection {
@@ -168,10 +163,8 @@
 .txtLastSection {
   background-color: #f1eeee;
   padding: 10px;
-  
-  
 }
-.lastSection{
+.lastSection {
   font-size: 12px;
   display: flex;
   flex-direction: column;
@@ -186,15 +179,13 @@
   display: flex;
 }
 
-
 @media (min-width: 1000px) {
-
   /* Section 1 */
 
-  .firstImage{
-   height: 510px; 
+  .firstImage {
+    height: 510px;
   }
-  
+
   /* Section 2 */
 
   .section2 {
@@ -234,10 +225,9 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-   
   }
-  
-  .txtPourquoi{
+
+  .txtPourquoi {
     float: left;
     box-sizing: border-box;
     width: 50%;
@@ -249,14 +239,13 @@
     width: 24px;
     height: 24px;
   }
-  .column{
+  .column {
     float: left;
     box-sizing: border-box;
     width: 50%;
     padding: 10px;
   }
 
- 
   /* Last Section */
 
   .lastSection {
@@ -264,7 +253,6 @@
     flex-direction: row;
     width: 85%;
     margin: auto;
-   
   }
 
   .lastSection img {
@@ -272,5 +260,4 @@
     width: 420px;
     height: 290px;
   }
-  
 }

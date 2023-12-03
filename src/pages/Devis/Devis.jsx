@@ -57,14 +57,15 @@ export const Devis = () => {
   return (
     <div className={styles.root}>
       <div className={styles.imgPano}></div>
-      <div className={styles.divForm}
-      >
-        <div className={styles.colorBox}><h2>Votre bien</h2></div>
+      <div className={styles.divForm}>
+        <div className={styles.colorBox}>
+          <h2>Votre bien</h2>
+        </div>
         <div>
           <Box>
             <form onSubmit={form.onSubmit(sendEmail)}>
-              <Select 
-                className={styles.marginTop} 
+              <Select
+                className={styles.marginTop}
                 label="Type de bien..."
                 placeholder="Type de bien..."
                 data={[
@@ -81,7 +82,8 @@ export const Devis = () => {
                 {...form.getInputProps("type")}
                 required
               />
-              <Radio.Group className={styles.marginTop}
+              <Radio.Group
+                className={styles.marginTop}
                 label="Vous souhaitez"
                 withAsterisk
                 required
@@ -93,7 +95,7 @@ export const Devis = () => {
                 </Group>
               </Radio.Group>
               <Radio.Group
-                className={styles.marginTop} 
+                className={styles.marginTop}
                 required
                 label="Installation elec +15ans"
                 withAsterisk
@@ -104,7 +106,7 @@ export const Devis = () => {
                   <Radio label="Non" value="no" />
                 </Group>
               </Radio.Group>
-              <Select 
+              <Select
                 className={styles.marginTop}
                 withAsterisk
                 required
@@ -236,7 +238,9 @@ export const Devis = () => {
                 {...form.getInputProps("moreInfo")}
                 required
               />
-              <div className={styles.colorBox2}><h2>Vos Informations Personelles</h2></div>
+              <div className={styles.colorBox2}>
+                <h2>Vos Informations Personelles</h2>
+              </div>
               <TextInput
                 className={styles.marginTop}
                 withAsterisk
