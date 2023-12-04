@@ -10,6 +10,7 @@ export const Contact = () => {
     firstName: "",
     lastName: "",
     email: "",
+    phoneNumber: "",
     message: "",
   });
 
@@ -19,6 +20,7 @@ export const Contact = () => {
       lastName: values.lastName,
       email: values.email,
       message: values.message,
+      phoneNumber: values.phoneNumber,
     });
   };
 
@@ -35,13 +37,13 @@ export const Contact = () => {
               <TextInput
                 withAsterisk
                 label="Nom"
-                {...form.getInputProps("firstName")}
+                {...form.getInputProps("lastName")}
                 required
               />
               <TextInput
                 withAsterisk
                 label="Prénom"
-                {...form.getInputProps("Name")}
+                {...form.getInputProps("firstName")}
                 required
               />
               <TextInput

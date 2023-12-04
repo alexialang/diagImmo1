@@ -119,7 +119,11 @@
 /* Section Pourquoi */
 .divPourquoi {
   display: flex;
+  width: 80%;
+  margin: auto;
   flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
 }
 
 .imgPourquoi {
@@ -132,9 +136,10 @@
 
 .column p {
   padding-top: 5px;
-  padding-left: 34px;
-  font-size: 13px;
+  
+ 
 }
+
 .column h3 {
   padding-left: 10px;
 }
@@ -244,6 +249,9 @@
     box-sizing: border-box;
     width: 50%;
     padding: 10px;
+  }
+  .column p{
+    padding-left: 34px;
   }
 
   /* Last Section */

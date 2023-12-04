@@ -22,7 +22,7 @@ export const Header = () => {
           position="bottom"
           trigger="hover"
           openDelay={100}
-          closeDelay={400}
+          closeDelay={200}
           classNames={{
             item: styles.subItem,
           }}
@@ -48,7 +48,7 @@ export const Header = () => {
             </Menu.Item>
             <Menu.Item
               onClick={() => {
-                navigate("/loi_carrez");
+                navigate("/loi_carez");
               }}
             >
               Loi Carrez
@@ -87,7 +87,7 @@ export const Header = () => {
           position="bottom"
           trigger="hover"
           openDelay={100}
-          closeDelay={400}
+          closeDelay={200}
           classNames={{
             item: styles.subItem,
           }}
@@ -155,9 +155,32 @@ export const Header = () => {
             </Menu.Item>
           </Menu.Dropdown>
         </Menu>
-        <Link to="/autres_services">
+        
+        <Menu
+          position="bottom"
+          trigger="hover"
+          openDelay={100}
+          closeDelay={200}
+          classNames={{
+            item: styles.subItem,
+          }}
+        >
+          <Menu.Target>
           <Button variant="subtle">Autres Services</Button>
-        </Link>
+          </Menu.Target>
+
+          <Menu.Dropdown>
+            <Menu.Item
+              className=""
+              onClick={() => {
+                navigate("/dtg");
+              }}
+            >
+              DTG
+            </Menu.Item>
+            </Menu.Dropdown>
+        </Menu>
+
         <Link to="/devis">
           <Button variant="subtle">Devis</Button>
         </Link>

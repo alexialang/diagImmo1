@@ -25,6 +25,7 @@ export const Devis = () => {
       firstName: "",
       lastName: "",
       email: "",
+      phoneNumber:""
     },
 
     validate: {
@@ -51,6 +52,7 @@ export const Devis = () => {
       firstName: values.firstName,
       lastName: values.lastName,
       email: values.email,
+      phoneNumber: values.phoneNumber,
     });
   };
 
@@ -90,8 +92,8 @@ export const Devis = () => {
                 {...form.getInputProps("wish")}
               >
                 <Group>
-                  <Radio label="Vendre" value="sell" />
-                  <Radio label="Louer" value="rent" />
+                  <Radio label="Vendre" value="vendre" />
+                  <Radio label="Louer" value="louer" />
                 </Group>
               </Radio.Group>
               <Radio.Group
@@ -257,6 +259,13 @@ export const Devis = () => {
                 placeholder="Nom"
                 autoComplete="family-name"
                 {...form.getInputProps("lastName")}
+                required
+              />
+              <TextInput
+                className={styles.marginTop}
+                withAsterisk
+                label="Numéro de téléphone"
+                {...form.getInputProps("phoneNumber")}
                 required
               />
               <TextInput

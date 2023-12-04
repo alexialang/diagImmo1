@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+
   & h1 {
     color: #909090;
     background-color: #909090;
@@ -18,12 +18,19 @@
   }
 }
 
+.h1{
+  position: relative;
+}
 .backgroundImg .block {
   position: absolute;
   font-size: 40px;
   color: white;
   margin-top: 70px;
+  top:0; left: 0;
+  padding-left: 50px;
+  padding-top: 14px;
 }
+
 
 .txt {
   width: 75%;
@@ -41,28 +48,4 @@
 }
 .txtColor {
   color: #e09b14;
-}
-
-.underline {
-  text-decoration: underline solid darkorange 1px;
-}
-.row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  column-gap: 10px;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  row-gap: 0;
-  margin-block-end: 0;
-}
-
-h3 {
-  margin-block-end: 0;
-}
-p {
-  margin-block-start: 0;
 }
