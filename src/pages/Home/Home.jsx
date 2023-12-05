@@ -109,11 +109,11 @@ export const Home = () => {
             <h2>Pourquoi Nous Choisir ?</h2>
             <p>
               <div>
-              Nous sommes là pour faciliter vos transactions immobilières en
-              fournissant des informations précises et fiables sur l’état de
-              votre bien.
-           </div> 
-           </p>
+                Nous sommes là pour faciliter vos transactions immobilières en
+                fournissant des informations précises et fiables sur l’état de
+                votre bien.
+              </div>
+            </p>
           </div>
           <div className={styles.fourBlock}>
             <div className={styles.column}>
@@ -177,26 +177,25 @@ export const Home = () => {
             (MOSELLE) ?
           </h2>
           <p>
-            · Le diagnostic <strong>amiante</strong> est requis lorsque le <strong>permis de construire</strong> a
-            été déposé <strong>avant 1997</strong> dans le département de la Moselle.
+            · Le diagnostic <strong>amiante</strong> est requis lorsque le{" "}
+            <strong>permis de construire</strong> a été déposé{" "}
+            <strong>avant 1997</strong> dans le département de la Moselle.
+            <br />· Le <strong>DPE</strong> (Diagnostic de Performance
+            Énergétique) est une obligation.
+            <br />· Le <strong>diagnostic plomb</strong> est obligatoire pour
+            les constructions antérieures à 1949.
+            <br />· Le <strong>diagnostic électrique</strong> est nécessaire si
+            l’installation a plus de quinze ans.
+            <br />· Le <strong>diagnostic gaz </strong>est obligatoire pour les
+            installations de plus de quinze ans.
+            <br />· Le <strong>diagnostic termites </strong>est exigé si un
+            arrêté préfectoral (dans le département de la Moselle) ou communal
+            (à Metz) le prescrit.
+            <br />· Le métrage <strong>Loi Carrez</strong> est requis pour les{" "}
+            <strong>biens en copropriété</strong> .
             <br />
-            · Le <strong>DPE</strong> (Diagnostic de Performance Énergétique) est une obligation.
-            <br />
-            · Le <strong>diagnostic plomb</strong> est obligatoire pour les constructions
-            antérieures à 1949.
-            <br />
-            · Le <strong>diagnostic électrique</strong> est nécessaire si l’installation a plus
-            de quinze ans.
-            <br />
-            · Le <strong>diagnostic gaz </strong>est obligatoire pour les installations de plus
-            de quinze ans.
-            <br />
-            · Le <strong>diagnostic termites </strong>est exigé si un arrêté préfectoral (dans le
-            département de la Moselle) ou communal (à Metz) le prescrit.
-            <br />
-            · Le métrage <strong>Loi Carrez</strong>  est requis pour les <strong>biens en copropriété</strong> .
-            <br />·L’ <strong>État des Risques Pollution des sols</strong> (<strong>ERP</strong> ) est une
-            obligation à respecter.
+            ·L’ <strong>État des Risques Pollution des sols</strong> (
+            <strong>ERP</strong> ) est une obligation à respecter.
           </p>
         </div>
         <img src="/src/assets/cathe.png" />

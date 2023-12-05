@@ -1,12 +1,22 @@
 import { Link } from "react-router-dom";
 import styles from "./header.module.css";
-import { Button, Menu } from "@mantine/core";
+import { Button, Menu, Burger } from "@mantine/core";
 import { useNavigate } from "react-router-dom";
+import PropTypes from "prop-types";
 
-export const Header = () => {
+export const Header = ({ opened, toggle }) => {
   const navigate = useNavigate();
+
   return (
     <div className={styles.root}>
+      <Burger
+        opened={opened}
+        onClick={toggle}
+        aria-label="Toggle navigation"
+        classNames={{
+          root: styles.burger,
+        }}
+      />
       <div className={styles.imgS}>
         <img
           className={styles.logo}
@@ -155,7 +165,7 @@ export const Header = () => {
             </Menu.Item>
           </Menu.Dropdown>
         </Menu>
-        
+
         <Menu
           position="bottom"
           trigger="hover"
@@ -166,7 +176,7 @@ export const Header = () => {
           }}
         >
           <Menu.Target>
-          <Button variant="subtle">Autres Services</Button>
+            <Button variant="subtle">Autres Services</Button>
           </Menu.Target>
 
           <Menu.Dropdown>
@@ -178,7 +188,7 @@ export const Header = () => {
             >
               DTG
             </Menu.Item>
-            </Menu.Dropdown>
+          </Menu.Dropdown>
         </Menu>
 
         <Link to="/devis">
@@ -190,4 +200,9 @@ export const Header = () => {
       </div>
     </div>
   );
+};
+
+Header.propTypes = {
+  opened: PropTypes.bool.isRequired,
+  toggle: PropTypes.func.isRequired,
 };
