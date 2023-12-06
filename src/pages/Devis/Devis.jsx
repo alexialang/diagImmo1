@@ -1,6 +1,6 @@
 import styles from "./devis.module.css";
 import { useForm } from "@mantine/form";
-import { TextInput, Button, Group, Box, Select, Radio } from "@mantine/core";
+import { TextInput, Button, Group, Box, Select, Radio,Checkbox,Anchor  } from "@mantine/core";
 import emailJs from "@emailjs/browser";
 
 export const Devis = () => {
@@ -58,18 +58,25 @@ export const Devis = () => {
 
   return (
     <div className={styles.root}>
-      <div className={styles.imgPano}></div>
-      <div className={styles.divForm}>
-        <div className={styles.colorBox}>
-          <h2>Votre bien</h2>
+      <div className={styles.backgroundImg}>
+        <div className={styles.divSize}>
+          <h1>Devis</h1>
+          <div className={styles.block}>
+            <p>Devis</p>
+          </div>
         </div>
+      </div>
+      <div className={styles.divForm}>
         <div>
           <Box>
-            <form onSubmit={form.onSubmit(sendEmail)}>
+            <form className={styles.form} onSubmit={form.onSubmit(sendEmail)}>
+            <div className={styles.colorBox2}>
+                <h2>Vos Informations Personelles</h2>
+              </div>
               <Select
                 className={styles.marginTop}
-                label="Type de bien..."
-                placeholder="Type de bien..."
+                label="Type de bien "
+                placeholder="---"
                 data={[
                   "Un appartement",
                   "Une maison",
@@ -86,7 +93,7 @@ export const Devis = () => {
               />
               <Radio.Group
                 className={styles.marginTop}
-                label="Vous souhaitez"
+                label="Vous souhaitez "
                 withAsterisk
                 required
                 {...form.getInputProps("wish")}
@@ -96,24 +103,13 @@ export const Devis = () => {
                   <Radio label="Louer" value="louer" />
                 </Group>
               </Radio.Group>
-              <Radio.Group
-                className={styles.marginTop}
-                required
-                label="Installation elec +15ans"
-                withAsterisk
-                {...form.getInputProps("electric15")}
-              >
-                <Group>
-                  <Radio label="Oui" value="yes" />
-                  <Radio label="Non" value="no" />
-                </Group>
-              </Radio.Group>
+
               <Select
                 className={styles.marginTop}
                 withAsterisk
                 required
                 label="Nombre de pièces..."
-                placeholder="Nombre de pièces..."
+                placeholder="---"
                 data={[
                   "Chambre (< 12m²)",
                   "Studio",
@@ -129,18 +125,6 @@ export const Devis = () => {
                 ]}
                 {...form.getInputProps("rooms")}
               />
-              <Radio.Group
-                className={styles.marginTop}
-                label="Installation gaz +15ans"
-                withAsterisk
-                {...form.getInputProps("gaz15")}
-                required
-              >
-                <Group>
-                  <Radio label="Oui" value="yes" />
-                  <Radio label="Non" value="no" />
-                </Group>
-              </Radio.Group>
               <TextInput
                 className={styles.marginTop}
                 withAsterisk
@@ -148,11 +132,24 @@ export const Devis = () => {
                 {...form.getInputProps("surface")}
                 required
               />
+               <Radio.Group
+                className={styles.marginTop}
+                label="Copropriété"
+                withAsterisk
+                required
+                {...form.getInputProps("coOwnership")}
+              >
+                <Group>
+                  <Radio label="Oui" value="yes" />
+                  <Radio label="Non" value="no" />
+                  <Radio label="Je ne sais pas" value="dontKnow" />
+                </Group>
+              </Radio.Group>
               <Select
                 className={styles.marginTop}
                 withAsterisk
                 label="Date de construction"
-                placeholder="Date de construction"
+                placeholder="---"
                 data={[
                   "Avant Janvier 1949",
                   "Avant Juillet 1997",
@@ -167,7 +164,7 @@ export const Devis = () => {
                 className={styles.marginTop}
                 withAsterisk
                 label="Chauffage"
-                placeholder="Chauffage"
+                placeholder="---"
                 data={[
                   "Gaz",
                   "Electrique",
@@ -183,7 +180,7 @@ export const Devis = () => {
                 className={styles.marginTop}
                 withAsterisk
                 label="Gaz"
-                placeholder="Gaz"
+                placeholder="---"
                 data={[
                   "Aucune installation",
                   "Gaz de ville",
@@ -198,15 +195,26 @@ export const Devis = () => {
               />
               <Radio.Group
                 className={styles.marginTop}
-                label="Copropriété"
-                withAsterisk
                 required
-                {...form.getInputProps("coOwnership")}
+                label="Installation elec +15ans"
+                withAsterisk
+                {...form.getInputProps("electric15")}
               >
                 <Group>
                   <Radio label="Oui" value="yes" />
                   <Radio label="Non" value="no" />
-                  <Radio label="Je ne sais pas" value="dontKnow" />
+                </Group>
+              </Radio.Group>
+              <Radio.Group
+                className={styles.marginTop}
+                label="Installation gaz +15ans"
+                withAsterisk
+                {...form.getInputProps("gaz15")}
+                required
+              >
+                <Group>
+                  <Radio label="Oui" value="yes" />
+                  <Radio label="Non" value="no" />
                 </Group>
               </Radio.Group>
               <TextInput
@@ -236,7 +244,6 @@ export const Devis = () => {
               <TextInput
                 className={styles.marginTop}
                 label="Informations complémentaires"
-                placeholder="Informations complémentaires"
                 {...form.getInputProps("moreInfo")}
                 required
               />
@@ -247,7 +254,6 @@ export const Devis = () => {
                 className={styles.marginTop}
                 withAsterisk
                 label="Prénom"
-                placeholder="Prénom"
                 autoComplete="given-name"
                 {...form.getInputProps("firstName")}
                 required
@@ -256,7 +262,6 @@ export const Devis = () => {
                 className={styles.marginTop}
                 withAsterisk
                 label="Nom"
-                placeholder="Nom"
                 autoComplete="family-name"
                 {...form.getInputProps("lastName")}
                 required
@@ -272,11 +277,22 @@ export const Devis = () => {
                 className={styles.marginTop}
                 withAsterisk
                 label="Email"
-                placeholder="votre@email.com"
                 {...form.getInputProps("email")}
               />
-              <Group justify="flex-end" mt="md">
-                <Button type="submit">Envoyer</Button>
+       
+               <Checkbox
+               className={styles.marginTop}
+                defaultChecked
+                label={
+                  <>
+                    En cochant cette case, j accepte la{' '}
+                    <Anchor href="/" target="_blank" inherit>
+                    Politique de confidentialité de ce site
+                    </Anchor>
+                    </>
+                       } />
+              <Group justify="center" mt="md" >
+                <Button type="submit" color="" className={styles.marginTop}>Envoyer</Button>
               </Group>
             </form>
           </Box>

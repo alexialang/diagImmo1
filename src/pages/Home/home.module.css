@@ -22,6 +22,7 @@
 
 .section2 {
   background-color: #f1eeee;
+  padding-bottom: 50px;
 }
 
 .li {
@@ -74,7 +75,6 @@
 }
 
 .purpleButton {
-  margin-bottom: 20px;
   border: solid 1px white;
   &:hover {
     border: solid 1px white;
@@ -165,7 +165,7 @@
 }
 .txtLastSection {
   background-color: #f1eeee;
-  padding: 10px;
+  padding: 20px;
 }
 .lastSection {
   font-size: 12px;
@@ -196,6 +196,7 @@
     flex-direction: row;
     width: 100%;
     padding: 0 7%;
+    padding-bottom: 50px;
   }
 
   .texte {
@@ -212,9 +213,6 @@
     align-items: center;
   }
 
-  .purpleButton {
-    margin-bottom: 100px;
-  }
 
   /* Section Pourquoi Nous Choisir */
   .imgPourquoi {
@@ -228,6 +226,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 80px;
   }
 
   .txtPourquoi {

@@ -14,17 +14,16 @@ export const Amiante = () => {
         </div>
       </div>
       <div className={styles.txt}>
-        Bienvenue chez GPADI, votre partenaire de confiance pour tous vos
-        besoins en diagnostics immobiliers. Nous comprenons l’importance de
-        garantir la sécurité et la conformité dans le domaine de la localisation
-        immobilière, et c’est pourquoi nous mettons en avant notre expertise en
-        matière de diagnostic Amiante.
-        <h2>Qu’est-ce que le Diagnostic Amiante ?</h2>
+        Bienvenue chez <strong>GPADI</strong>, votre partenaire de confiance pour tous vos
+        besoins en <strong>diagnostics immobiliers</strong>. Nous comprenons l’importance de
+        garantir la <strong>sécurité</strong> et la <strong>conformité</strong>, et c’est pourquoi nous mettons en avant notre <strong>expertise</strong> en
+        matière de <strong>diagnostic</strong> <strong>Amiante</strong>.
+        <h2>Qu’est-ce que le Diagnostic <strong>Amiante</strong> ?</h2>
         <p>
-          Le diagnostic Amiante est une étape essentielle lors de la vente ou de
-          la localisation d’un bien immobilier construit avant le 1er juillet
+          Le diagnostic <strong>Amiante</strong> est une étape essentielle lors de la vente ou de
+          la localisation d’un <strong>bien immobilier</strong> construit avant le 1er juillet
           1997. Il vise à détecter la présence éventuelle d’amiante, un matériau
-          dangereux pour la santé, permettant ainsi d’assurer la sécurité des
+          dangereux pour la santé, permettant ainsi d’assurer la <strong>sécurité</strong> des
           occupants.
         </p>
         <h2>Obligations et dates importantes</h2>
@@ -42,7 +41,7 @@ export const Amiante = () => {
         </p>
         <h2>Notre Engagement envers la Conformité</h2>
         <p>
-          Chez GPADI, nous nous engageons à assurer une totale conformité avec
+          Chez <strong>GPADI</strong>, nous nous engageons à assurer une totale conformité avec
           les exigences du diagnostic Amiante. Nos diagnostiqueurs expérimentés
           sont formés pour détecter toute présence d’amiante et fournir des
           recommandations appropriées.
@@ -61,7 +60,7 @@ export const Amiante = () => {
           environnement pour les occupants.
         </p>
         <p className={styles.txtColor}>
-          Besoin d’un DEVIS pour votre diagnostic immobilier Amiante ?
+          Besoin d’un<strong>DEVIS</strong> pour votre diagnostic immobilier Amiante ?
           Contactez-nous dès Aujourd’hui!
         </p>
         <div>

@@ -158,14 +158,14 @@ export const Header = ({ opened, toggle }) => {
             <Menu.Item
               className=""
               onClick={() => {
-                navigate("/obligations_locations");
+                navigate("/obligations_location");
               }}
             >
               Obligations de Locations
             </Menu.Item>
           </Menu.Dropdown>
         </Menu>
-
+{/* 
         <Menu
           position="bottom"
           trigger="hover"
@@ -189,7 +189,7 @@ export const Header = ({ opened, toggle }) => {
               DTG
             </Menu.Item>
           </Menu.Dropdown>
-        </Menu>
+        </Menu> */}
 
         <Link to="/devis">
           <Button variant="subtle">Devis</Button>

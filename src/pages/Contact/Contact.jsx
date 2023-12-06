@@ -1,6 +1,6 @@
-import classes from "./contact.module.css";
+import styles from "./contact.module.css";
 import { useForm } from "@mantine/form";
-import { TextInput, Box, Group, Button, Textarea } from "@mantine/core";
+import { TextInput, Box, Group, Button, Textarea, Checkbox,Anchor} from "@mantine/core";
 import emailJs from "@emailjs/browser";
 
 export const Contact = () => {
@@ -25,15 +25,22 @@ export const Contact = () => {
   };
 
   return (
-    <div className={classes.root}>
-      <div className={classes.imgPano}></div>
-      <div className={classes.divForm}>
+    <div className={styles.root}>
+        <div className={styles.backgroundImg}>
+        <div className={styles.divSize}>
+          <h1>Nous contacter</h1>
+          <div className={styles.block}>
+            <p>Nous contacter</p>
+          </div>
+        </div>
+      </div>
+      <div className={styles.divForm}>
         <div>
           <p>Remplissez le formulaire ci dessous pour nous contacter</p>
         </div>
         <div>
           <Box>
-            <form onSubmit={form.onSubmit(sendEmail)}>
+            <form className={styles.form} onSubmit={form.onSubmit(sendEmail)}>
               <TextInput
                 withAsterisk
                 label="Nom"
@@ -65,8 +72,19 @@ export const Contact = () => {
                 {...form.getInputProps("message")}
                 required
               />
-              <Group justify="flex-end" mt="md">
-                <Button type="submit">Submit</Button>
+              <Checkbox
+               className={styles.marginTop}
+                defaultChecked
+                label={
+                  <>
+                    En cochant cette case, j accepte la{' '}
+                    <Anchor href="/" target="_blank" inherit>
+                    Politique de confidentialité de ce site
+                    </Anchor>
+                    </>
+                       } />
+              <Group justify="center" mt="md">
+                <Button type="submit" className={styles.marginTop}>Envoyer</Button>
               </Group>
             </form>
           </Box>

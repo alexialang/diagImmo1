@@ -13,60 +13,63 @@ export const LoiCarez = () => {
       </div>
       <div className={styles.txt}>
         <p>
-          Bienvenue chez GPADI, votre partenaire de confiance pour tous vos
-          besoins en diagnostics immobiliers. Nous comprenons l’importance de
-          garantir la transparence et la conformité dans le domaine de la
-          location immobilière, et c’est pourquoi nous mettons en avant notre
-          expertise en matière de Loi Carrez.
+          Bienvenue chez <strong>GPADI</strong>, votre partenaire de confiance pour tous vos
+          besoins en <strong className={styles.fontweight}>diagnostics immobiliers</strong>. Nous comprenons l’importance de
+          garantir la <strong className={styles.fontweight}>transparence</strong> et la <strong className={styles.fontweight}>conformité</strong> c’est pourquoi nous mettons en avant notre
+          expertise en matière de <strong>Loi Carrez</strong>.
         </p>
+
         <h2>Qu’est-ce que la Loi Carrez ?</h2>
         <p>
-          La Loi Carrez impose la mention précise de la superficie privative
-          d’un bien immobilier en copropriété lors de la vente. Cette
+          La <strong >Loi Carrez </strong>impose la mention précise de la superficie privative
+          d’un <strong>bien immobilier en copropriété</strong> lors de la <strong>vente</strong>. Cette
           réglementation a été instaurée pour protéger les acquéreurs en
-          assurant une information claire sur la surface réelle du bien. Chez
-          [Nom de votre entreprise], nous sommes là pour vous accompagner dans
-          cette démarche essentielle.
+          assurant une information claire sur la surface réelle du bien. 
         </p>
+
         <h2>Obligations et Dates Importantes</h2>
-        <h3>Obligation Légale :</h3>{" "}
+        <h3>Obligation Légale :</h3>
         <p>
-          La Loi Carrez impose le mesurage précis de la superficie privative des
-          lots en copropriété lors de la vente. La surface doit être mentionnée
+          La <strong className={styles.fontweight}>Loi Carrez </strong>impose le <strong>mesurage précis de la superficie privative des
+          lots en copropriété lors de la vente</strong>. La surface doit être mentionnée
           dans l’acte de vente et dans les annonces immobilières.
         </p>
         <h3>Validité du Mesurage :</h3>
         <p>
-          {" "}
-          La validité du mesurage Carrez est illimitée, sauf en cas de
+          La <strong className={styles.fontweight}>validité</strong> du <strong className={styles.fontweight}>mesurage Carrez</strong> est <strong>illimitée</strong>, sauf en cas de
           modification importante des lieux. Dans ce cas, une mise à jour est
           recommandée.
         </p>
+
         <h2>Notre Engagement envers la Conformité</h2>
         <p>
-          En tant que diagnostiqueurs immobiliers expérimentés, nous nous
+          En tant que <strong className={styles.fontweight}>diagnostiqueurs immobiliers</strong> expérimentés, nous nous
           engageons à assurer la conformité totale avec la Loi Carrez. Notre
-          équipe d’experts est formée pour effectuer des mesures précises de la
+          équipe d’experts est formée pour effectuer des <strong>mesures précises</strong> de la
           superficie privative, excluant uniquement certains espaces spécifiés
           par la loi. Nous sommes là pour garantir que votre transaction
           immobilière respecte les normes les plus strictes.
         </p>
+        
         <h2>Pourquoi nous choisir pour votre Mesurage Carrez ?</h2>
-        <p>
-          Expertise Approfondie : Nos diagnostiqueurs sont formés aux
-          spécificités de la Loi Carrez et sont experts dans la réalisation de
+          <h3>Expertise Approfondie :</h3>
+          <p>Nos <strong className={styles.fontweight}>diagnostiqueurs</strong> sont formés aux
+          spécificités de la <strong>Loi Carrez</strong> et sont experts dans la réalisation de
           mesurages précis.
-          <br />
-          Conseils Personnalisés : Besoin de conseils sur la Loi Carrez ? Notre
+          </p>
+          <h3>Conseils Personnalisés :</h3>
+          <p> Besoin de conseils sur la Loi Carrez ? Notre
           équipe est là pour répondre à toutes vos questions et vous fournir les
           informations nécessaires.
-          <br />
-          Minimisation des Risques : Avec GPADI, minimisez les risques liés à
+          </p>
+          <h3>Minimisation des Risques :</h3>
+          <p>
+           Avec GPADI, minimisez les risques liés à
           une déclaration incorrecte de la superficie, assurant ainsi une
           transaction immobilière en toute confiance.
-        </p>
+          </p>
         <p className={styles.txtColor}>
-          Besoin d’un DEVIS pour votre diagnostic immobilier Loi Carrez ?
+          Besoin d’un <strong>DEVIS</strong> pour votre diagnostic immobilier <strong>Loi Carrez</strong> ?
           Contactez-nous dès Aujourd’hui
         </p>
         <div>

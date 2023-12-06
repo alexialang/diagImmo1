@@ -12,76 +12,79 @@ export const ObligAchat = () => {
         </div>
       </div>
       <div className={styles.txt}>
-        <p>
-          Bienvenue sur notre page dédiée aux diagnostics immobiliers
-          obligatoires pour les achats avec GPADI. Nous comprenons l’importance
-          de vous fournir des informations claires et précises pour garantir une
-          acquisition en toute conformité. Découvrez ci-dessous les principaux
-          diagnostics immobiliers obligatoires que vous devez connaître lors
-          d’un achat.
+        <p>Lors d’une vente immobilière en France, plusieurs diagnostics sont obligatoires pour garantir la transparence et la sécurité de la transaction. Ces obligations sont édictées par la législation et visent à informer les parties prenantes sur l’état du bien.</p>
+         <p className={styles.fontsize}>Voici une liste des diagnostics immobiliers nécessaires lors d’une vente :</p>
+
+        <div className={styles.column}> 
+        <h2>Diagnostic de Performance Énergétique (DPE) :</h2>
+        <p>Obligatoire pour évaluer la performance énergétique du logement.
+        Inclus dans les annonces immobilières.
+        Valide pendant 10 ans, sauf en cas de travaux significatifs.</p>
+        </div>
+
+        <div className={styles.column}>
+        <h2>Diagnostic Amiante :</h2>
+        <p>Obligatoire si le permis de construire a été déposé avant 1997.
+           Vise à détecter la présence d’amiante dans le bâtiment.
         </p>
-
-        <h2>Diagnostics Obligatoires pour les Achats</h2>
-
-        <div className={styles.column}>
-          <h3>Loi Carrez : Mesurage en Copropriété</h3>
-          <p>
-            La Loi Carrez exige le mesurage de la superficie privative des lots
-            en copropriété lors de la vente.
-          </p>
         </div>
-
         <div className={styles.column}>
-          <h3>Diagnostic Gaz</h3>{" "}
-          <p>
-            Le diagnostic gaz est obligatoire pour les biens immobiliers équipés
-            d’une installation de gaz datant de plus de 15 ans.
-          </p>
-        </div>
-
-        <div className={styles.column}>
-          <h3>Diagnostic Électrique</h3>
-          <p>
-            Le diagnosticélectrique est requis pour les biens immobiliers dont
-            l’installation électrique a plus de 15 ans.
-          </p>
-        </div>
-
-        <div className={styles.column}>
-          <h3>Diagnostic Amiante</h3>
-          <p>
-            {" "}
-            Le diagnostic amiante est obligatoire pour les biens construits
-            avant le 1er juillet 1997.
-          </p>
-        </div>
-
-        <div className={styles.column}>
-          <h3>Diagnostic ERP (État des Risques et Pollutions)</h3>
-          <p>
-            {" "}
-            L’ERP est obligatoire pour informer sur les risques naturels,
-            miniers, technologiques, et les pollutions.
-          </p>
-        </div>
-
-        <div className={styles.column}>
-          <h3>Diagnostic Plomb (Crep)</h3>
-          <p>
-            {" "}
-            Le diagnostic plomb est obligatoire pour les biens construits avant
-            le 1er janvier 1949.
-          </p>
-        </div>
-
-        <p>
-          Chez GPADI, nous sommes là pour vous accompagner à travers ces
-          démarches. N’hésitez pas à nous contacter pour obtenir des conseils
-          personnalisés et des devis adaptés à vos besoins spécifiques lors de
-          l’achat d’un bien immobilier. Garantissez une acquisition en toute
-          tranquillité et conformité avec nos services de diagnostics
-          immobiliers.
+        <h2>Diagnostic Plomb (CREP) :</h2>
+        <p>Requis pour les constructions antérieures à 1949.
+           Évalue la présence de plomb, notamment dans les peintures.
         </p>
+        </div>
+
+        <div className={styles.column}>
+        <h2>Diagnostic Électrique :</h2>
+        <p>Obligatoire si l’installation électrique a plus de 15 ans.
+           Vérifie la conformité et la sécurité des équipements électriques.
+        </p>
+        </div>
+
+        <div className={styles.column}>
+        <h2>Diagnostic Gaz :</h2>
+        <p>Nécessaire pour les installations de gaz de plus de 15 ans.
+           Évalue la sécurité des équipements gaziers.
+        </p>
+        </div>
+
+        <div className={styles.column}>
+        <h2>Diagnostic Termites :</h2>
+        <p>Obligatoire si un arrêté préfectoral ou communal le prescrit.
+           Vise à détecter la présence de termites ou d’autres insectes xylophages.
+        </p>
+        </div>
+
+        <div className={styles.column}>
+        <h2>Mesurage Loi Carrez :</h2>
+        <p>Requis pour les biens en copropriété.
+           Mesure la superficie privative du lot vendu.
+        </p>
+        </div>
+
+        <div className={styles.column}>
+        <h2>État des Risques et Pollutions (ERP) :</h2>
+        <p>Informe sur les risques naturels, technologiques, et les pollutions du secteur.
+        </p>
+        </div>
+
+        <div className={styles.column}>
+        <h2>Diagnostic Technique Global (DTG) :</h2>
+        <p>Obligatoire dans certaines copropriétés.
+           Évalue l’état général du bâtiment et anticipe les travaux nécessaires.
+        </p>
+        </div>
+
+        <div className={styles.column}>
+        <h2>Assainissement Non Collectif (ANC) :</h2>
+        <p>Exigé pour les biens non raccordés au réseau public d’assainissement. </p> 
+        </div>
+        <p> Le respect de ces obligations garantit la conformité légale de la vente immobilière, apportant une sécurité accrue aux vendeurs et aux acquéreurs.<br/>
+          Chaque diagnostic doit être réalisé par des professionnels certifiés pour assurer la validité des résultats.</p>
+        <p className={styles.txtColor}>
+          Besoin d’un DEVIS ? Contactez-nous dès Aujourd’hui!</p>
+
         <div>
           <Link to="/devis">
             <Button
