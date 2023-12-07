@@ -12,9 +12,9 @@ import { DiagGaz } from "../../pages/AvtAchatLoc/DiagGaz";
 import { ObligAchat } from "../../pages/AvtAchatLoc/ObligAchat";
 import { ObligLoc } from "../../pages/AvtAchatLoc/ObligLoc";
 import { Devis } from "../../pages/Devis/Devis";
+import { Conf } from "../../pages/Conf/Conf";
 // import { Dtg } from "../../pages/AutresServices/Dtg";
 
-// import { Cookie } from "../Cookie/Cookie";
 import { Footer } from "../Footer/Footer";
 
 export const Main = () => {
@@ -35,8 +35,8 @@ export const Main = () => {
         <Route path="/obligations_location" element={<ObligLoc />} />
         <Route path="/devis" element={<Devis />} />
         {/* <Route path="/dtg" element={<Dtg />} /> */}
+        <Route path="/conf" element={<Conf />} />
       </Routes>
-      {/* <Cookie/> */}
       <Footer />
     </div>
   );

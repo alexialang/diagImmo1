@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const ObligLoc = () => {
   return (
-    <div>
+    <div className={styles.root}>
       <div className={styles.backgroundImg}>
         <h1>Vos Obligations de Location</h1>
         <div className={styles.block}>

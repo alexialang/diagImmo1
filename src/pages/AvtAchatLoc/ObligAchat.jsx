@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const ObligAchat = () => {
   return (
-    <div>
+    <div className={styles.root}>
       <div className={styles.backgroundImg}>
         <h1>Vos Obligations d’Achat</h1>
         <div className={styles.block}>
@@ -74,11 +74,6 @@ export const ObligAchat = () => {
         <p>Obligatoire dans certaines copropriétés.
            Évalue l’état général du bâtiment et anticipe les travaux nécessaires.
         </p>
-        </div>
-
-        <div className={styles.column}>
-        <h2>Assainissement Non Collectif (ANC) :</h2>
-        <p>Exigé pour les biens non raccordés au réseau public d’assainissement. </p> 
         </div>
         <p> Le respect de ces obligations garantit la conformité légale de la vente immobilière, apportant une sécurité accrue aux vendeurs et aux acquéreurs.<br/>
           Chaque diagnostic doit être réalisé par des professionnels certifiés pour assurer la validité des résultats.</p>

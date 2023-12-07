@@ -1,6 +1,6 @@
 import styles from "./contact.module.css";
 import { useForm } from "@mantine/form";
-import { TextInput, Box, Group, Button, Textarea, Checkbox,Anchor} from "@mantine/core";
+import { TextInput, Box, Group, Button, Textarea, Checkbox,Anchor,Popover, Text,} from "@mantine/core";
 import emailJs from "@emailjs/browser";
 
 export const Contact = () => {
@@ -34,13 +34,25 @@ export const Contact = () => {
           </div>
         </div>
       </div>
+      {/* Section a propos */}
+      <section>
+
+        <div className={styles.blockQuiSommesNous}>
+          <div><h2>Qui somme nous ?</h2></div>
+            <div className={styles.txt}>
+              <p>Notre entreprise de diagnostic immobilier, active dans les départements 57, 54 et 55, excelle dans la fourniture de diagnostics conformes aux normes réglementaires. Forts d’une équipe expérimentée, nous assurons une expertise technique complète, une conformité rigoureuse, une réactivité accrue et une transparence totale. Couvrant divers diagnostics, nous facilitons des transactions immobilières sûres et transparentes pour nos clients, qu’il s’agisse de ventes ou locations.
+              </p>
+            </div>
+        </div>
+      </section>
       <div className={styles.divForm}>
         <div>
-          <p>Remplissez le formulaire ci dessous pour nous contacter</p>
+          <p>Remplissez le formulaire ci dessous pour nous contacter :</p>
         </div>
         <div>
           <Box>
             <form className={styles.form} onSubmit={form.onSubmit(sendEmail)}>
+              <h2>Formulaire de contact</h2>
               <TextInput
                 withAsterisk
                 label="Nom"
@@ -77,14 +89,23 @@ export const Contact = () => {
                 defaultChecked
                 label={
                   <>
-                    En cochant cette case, j accepte la{' '}
-                    <Anchor href="/" target="_blank" inherit>
+                    En cochant cette case, j’accepte la{' '}
+                    <Anchor href="/conf" target="_blank" inherit>
                     Politique de confidentialité de ce site
                     </Anchor>
                     </>
                        } />
+
               <Group justify="center" mt="md">
+
+              <Popover width={200} position="bottom" withArrow shadow="md">
+              <Popover.Target>
                 <Button type="submit" className={styles.marginTop}>Envoyer</Button>
+                </Popover.Target>
+              <Popover.Dropdown>
+              <Text size="xs">This is uncontrolled popover, it is opened when button is clicked</Text>
+              </Popover.Dropdown>
+              </Popover>
               </Group>
             </form>
           </Box>

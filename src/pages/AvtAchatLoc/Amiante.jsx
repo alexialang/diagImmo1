@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const Amiante = () => {
   return (
-    <div>
+    <div className={styles.root}>
       <div className={styles.backgroundImg}>
         <div className={styles.divSize}>
           <h1>Amiante</h1>

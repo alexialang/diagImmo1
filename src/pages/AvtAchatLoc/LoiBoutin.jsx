@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const LoiBoutin = () => {
   return (
-    <div>
+    <div className={styles.root}>
       <div className={styles.backgroundImg}>
         <h1>Loi Boutin</h1>
         <div className={styles.block}>

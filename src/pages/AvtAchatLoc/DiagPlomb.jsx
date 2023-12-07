@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const DiagPlomb = () => {
   return (
-    <div>
+    <div className={styles.root}>
       <div className={styles.backgroundImg}>
         <h1>Diagnostic Plomb</h1>
         <div className={styles.block}>

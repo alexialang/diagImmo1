@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const LoiCarez = () => {
   return (
-    <div>
+    <div className={styles.root}>
       <div className={styles.backgroundImg}>
         <h1>Loi Carez</h1>
         <div className={styles.block}>

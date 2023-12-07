@@ -1,15 +1,16 @@
 .root {
   margin-top: 80px;
+
 }
 .backgroundImg {
-  background-image: url(../../assets/imagePanoAchatLoc.jpg);
-  height: 300px;
+  background-image: url(../../assets/contact.png);
+  height: 200px;
   width: 100%;
   background-size: cover;
-  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-position:center;
 
   & h1 {
     color: #909090;
@@ -36,11 +37,12 @@
 
 
 .divForm {
-  margin-top: 60px;
-  width: 100%;
+  margin:auto;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
 }
 
 .form{
@@ -48,7 +50,19 @@
   padding: 30px;
   margin-top: 30px;
   border-radius: 20px;
+
 }
+
+form h2{
+  background-color:#e09b14;
+  padding: 6px 100px;
+  margin-top: 30px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 300;
+  font-size: 25px;
+}
+
 .marginTop {
   margin-top: 10px;
 }
@@ -61,4 +75,48 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.divForm p {
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+/* qui sommes nous? */
+
+.blockQuiSommesNous{
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: start;
+  flex-direction:column;
+  padding:20px 0px 20px 70px ;
+}
+
+.blockQuiSommesNous h2{
+  font-weight: 400;
+}
+
+.blockQuiSommesNous p{
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+.txt{
+  width: 70%;
+}
+ .blockQuiSommesNous h2{
+  font-size: 30px;
+  text-decoration:2px underline #e09b14;
+ }
+  
+h2{
+  margin-block-start: 0;
+}
+
+@media (min-width:700px) {
+  .form{
+    box-shadow: -2px 0px 21px 7px #D9D9D9;
+  }
+  
 }

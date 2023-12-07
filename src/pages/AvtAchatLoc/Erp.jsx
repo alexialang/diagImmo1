@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const Erp = () => {
   return (
-    <div>
+    <div className={styles.root}>
       <div className={styles.backgroundImg}>
         <h1>ERP</h1>
         <div className={styles.block}>

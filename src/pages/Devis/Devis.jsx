@@ -71,7 +71,7 @@ export const Devis = () => {
           <Box>
             <form className={styles.form} onSubmit={form.onSubmit(sendEmail)}>
             <div className={styles.colorBox2}>
-                <h2>Vos Informations Personelles</h2>
+                <h2>Votre bien</h2>
               </div>
               <Select
                 className={styles.marginTop}
@@ -285,8 +285,8 @@ export const Devis = () => {
                 defaultChecked
                 label={
                   <>
-                    En cochant cette case, j accepte la{' '}
-                    <Anchor href="/" target="_blank" inherit>
+                    En cochant cette case, j’accepte la{' '}
+                    <Anchor href="/conf" target="_blank" inherit>
                     Politique de confidentialité de ce site
                     </Anchor>
                     </>

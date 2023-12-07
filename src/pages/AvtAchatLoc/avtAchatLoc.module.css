@@ -1,3 +1,6 @@
+.root {
+  margin-top: 80px;
+}
 .fontweight{
   font-weight: normal;
 }
@@ -7,7 +10,7 @@
 
 .backgroundImg {
   background-image: url(../../assets/imagePanoAchatLoc.jpg);
-  height: 300px;
+  height: 200px;
   width: 100%;
   background-size: cover;
   background-position: center;
