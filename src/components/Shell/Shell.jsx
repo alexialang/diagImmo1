@@ -13,7 +13,7 @@ export const Shell = () => {
       header={{ height: 80 }}
       navbar={{
         width: 300,
-        breakpoint: "xs",
+        breakpoint: "md",
         collapsed: { mobile: !opened, desktop: true },
       }}
       classNames={{ main: classes.main }}
