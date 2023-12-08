@@ -58,7 +58,7 @@ export const Header = ({ opened, toggle }) => {
             </Menu.Item>
             <Menu.Item
               onClick={() => {
-                navigate("/loi_carez");
+                navigate("/loi_carrez");
               }}
             >
               Loi Carrez

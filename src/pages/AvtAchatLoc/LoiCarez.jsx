@@ -2,13 +2,13 @@ import styles from "./avtAchatLoc.module.css";
 import { Button } from "@mantine/core";
 import { Link } from "react-router-dom";
 
-export const LoiCarez = () => {
+export const LoiCarrez = () => {
   return (
     <div className={styles.root}>
       <div className={styles.backgroundImg}>
-        <h1>Loi Carez</h1>
+        <h1>Loi Carrez</h1>
         <div className={styles.block}>
-          <p>Loi Carez</p>
+          <p>Loi Carrez</p>
         </div>
       </div>
       <div className={styles.txt}>

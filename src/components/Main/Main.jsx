@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import { Home } from "../../Pages/Home/Home";
 import { Contact } from "../../pages/Contact/Contact";
 import { Dpe } from "../../pages/AvtAchatLoc/Dpe";
-import { LoiCarez } from "../../pages/AvtAchatLoc/LoiCarez";
+import { LoiCarrez } from "../../pages/AvtAchatLoc/LoiCarez";
 import { LoiBoutin } from "../../pages/AvtAchatLoc/LoiBoutin";
 import { DiagPlomb } from "../../pages/AvtAchatLoc/DiagPlomb";
 import { Erp } from "../../pages/AvtAchatLoc/Erp";
@@ -24,7 +24,7 @@ export const Main = () => {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/dpe" element={<Dpe />} />
-        <Route path="/loi_carez" element={<LoiCarez />} />
+        <Route path="/loi_carrez" element={<LoiCarrez />} />
         <Route path="/loi_boutin" element={<LoiBoutin />} />
         <Route path="/diag_plomb" element={<DiagPlomb />} />
         <Route path="/diag_electrique" element={<DiagElec />} />

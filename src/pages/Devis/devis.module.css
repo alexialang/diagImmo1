@@ -1,3 +1,6 @@
+.root {
+  margin-top: 80px;
+}
 .backgroundImg {
   background-image: url(../../assets/daniel-mccullough--FPFq_trr2Y-unsplash2.jpg);
   height: 200px;
@@ -84,9 +87,7 @@ box-shadow: -2px 0px 21px 7px #D9D9D9;
   .divForm {
     width: 100%;
   }
-  .root {
-    margin-top: 80px;
-  }
+  
   .colorBox {
     padding: 6px 200px;
     background-color: #e09b14;
