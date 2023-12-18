@@ -22,7 +22,6 @@
 
 .section2 {
   background-color: #f1eeee;
-  padding-bottom: 50px;
 }
 
 .li {
@@ -68,6 +67,7 @@
 
 .linkTxt {
   color: black;
+  font-size: 15px;
 }
 
 .linkTxt:hover {
@@ -153,6 +153,8 @@
 
 .titlePourquoi h2 {
   color: #d78e01;
+  font-size: 30px;
+  margin-top: 60px;
 }
 .titlePourquoi p {
   font-weight: 500;
@@ -213,6 +215,9 @@
     align-items: center;
   }
 
+  .linkTxt {
+    font-size: 20px;
+  }
 
   /* Section Pourquoi Nous Choisir */
   .imgPourquoi {
@@ -250,6 +255,12 @@
   .column p {
     padding-left: 34px;
   }
+  
+.titlePourquoi h2 {
+  color: #d78e01;
+  font-size: 30px;
+  margin-top: 0;
+}
 
   /* Last Section */
 
