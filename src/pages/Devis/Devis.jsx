@@ -1,7 +1,17 @@
 import styles from "./devis.module.css";
 import { useForm } from "@mantine/form";
-import { TextInput, Button, Group, Box, Select, Radio,Checkbox,Anchor  } from "@mantine/core";
+import {
+  TextInput,
+  Button,
+  Group,
+  Box,
+  Select,
+  Radio,
+  Checkbox,
+  Anchor,
+} from "@mantine/core";
 import emailJs from "@emailjs/browser";
+import { showNotification } from "@mantine/notifications";
 
 export const Devis = () => {
   emailJs.init("yij5B0qq7jkBd8l4B");
@@ -25,7 +35,7 @@ export const Devis = () => {
       firstName: "",
       lastName: "",
       email: "",
-      phoneNumber:""
+      phoneNumber: "",
     },
 
     validate: {
@@ -34,26 +44,43 @@ export const Devis = () => {
   });
 
   const sendEmail = (values) => {
-    emailJs.send("service_j6i38ke", "template_64iijd5", {
-      type: values.type,
-      wish: values.wish,
-      electric15: values.electric15,
-      gaz15: values.gaz15,
-      rooms: values.rooms,
-      surface: values.surface,
-      constructionDate: values.constructionDate,
-      heating: values.heating,
-      gazType: values.gazType,
-      coOwnership: values.coOwnership,
-      adress: values.adress,
-      postalCode: values.postalCode,
-      city: values.city,
-      moreInfo: values.moreInfo,
-      firstName: values.firstName,
-      lastName: values.lastName,
-      email: values.email,
-      phoneNumber: values.phoneNumber,
-    });
+    emailJs
+      .send("service_j6i38ke", "template_64iijd5", {
+        type: values.type,
+        wish: values.wish,
+        electric15: values.electric15,
+        gaz15: values.gaz15,
+        rooms: values.rooms,
+        surface: values.surface,
+        constructionDate: values.constructionDate,
+        heating: values.heating,
+        gazType: values.gazType,
+        coOwnership: values.coOwnership,
+        adress: values.adress,
+        postalCode: values.postalCode,
+        city: values.city,
+        moreInfo: values.moreInfo,
+        firstName: values.firstName,
+        lastName: values.lastName,
+        email: values.email,
+        phoneNumber: values.phoneNumber,
+      })
+      .then(() => {
+        showNotification({
+          title: "Email envoyé",
+          message: "Votre email a bien été envoyé",
+          color: "green",
+          autoClose: 5000,
+        });
+      })
+      .catch(() => {
+        showNotification({
+          title: "Erreur",
+          message: "Une erreur est survenue",
+          color: "red",
+          autoClose: 5000,
+        });
+      });
   };
 
   return (
@@ -70,7 +97,7 @@ export const Devis = () => {
         <div>
           <Box>
             <form className={styles.form} onSubmit={form.onSubmit(sendEmail)}>
-            <div className={styles.colorBox2}>
+              <div className={styles.colorBox2}>
                 <h2>Votre bien</h2>
               </div>
               <Select
@@ -132,7 +159,7 @@ export const Devis = () => {
                 {...form.getInputProps("surface")}
                 required
               />
-               <Radio.Group
+              <Radio.Group
                 className={styles.marginTop}
                 label="Copropriété"
                 withAsterisk
@@ -279,20 +306,23 @@ export const Devis = () => {
                 label="Email"
                 {...form.getInputProps("email")}
               />
-       
-               <Checkbox
-               className={styles.marginTop}
+
+              <Checkbox
+                className={styles.marginTop}
                 defaultChecked
                 label={
                   <>
-                    En cochant cette case, j’accepte la{' '}
+                    En cochant cette case, j’accepte la{" "}
                     <Anchor href="/conf" target="_blank" inherit>
-                    Politique de confidentialité de ce site
+                      Politique de confidentialité de ce site
                     </Anchor>
-                    </>
-                       } />
-              <Group justify="center" mt="md" >
-                <Button type="submit" color="" className={styles.marginTop}>Envoyer</Button>
+                  </>
+                }
+              />
+              <Group justify="center" mt="md">
+                <Button type="submit" color="" className={styles.marginTop}>
+                  Envoyer
+                </Button>
               </Group>
             </form>
           </Box>
