@@ -66,7 +66,7 @@ export const Home = () => {
                 <div className={styles.colorBlock}>
                   <img
                     className={styles.imgHouse}
-                    src="/src/assets/maison3.png"
+                    src="public/maison3.png"
                     alt="photo d'une maison"
                   />
                 </div>
@@ -80,7 +80,7 @@ export const Home = () => {
                 <div className={styles.colorBlock}>
                   <img
                     className={styles.imgHands}
-                    src="/src/assets/poigneeMains.png"
+                    src="public/poigneeMains.png"
                     alt="poignée de main"
                   />
                 </div>
@@ -100,7 +100,7 @@ export const Home = () => {
         <div>
           <img
             className={styles.imgPourquoi}
-            src="src/assets/batimentMetz.png"
+            src="public/batimentMetz.png"
             alt="Batiment en pierres jaunes et Batiment en pierre rouge"
           />
         </div>
@@ -119,7 +119,7 @@ export const Home = () => {
             <div className={styles.column}>
               <div>
                 <div className={styles.row}>
-                  <img src="/src/assets/check.png" />
+                  <img src="public/check.png" />
                   <h3>Expertise Approfondie</h3>
                 </div>
                 <p>
@@ -130,7 +130,7 @@ export const Home = () => {
               </div>
               <div>
                 <div className={styles.row}>
-                  <img src="/src/assets/check.png" />
+                  <img src="public/check.png" />
                   <h3>Conseils Personnalisés </h3>
                 </div>
                 <p>
@@ -143,7 +143,7 @@ export const Home = () => {
             <div className={styles.column}>
               <div>
                 <div className={styles.row}>
-                  <img src="/src/assets/check.png" />
+                  <img src="public/check.png" />
                   <h3>Minimisation des Risques : </h3>
                 </div>
                 <p>
@@ -154,7 +154,7 @@ export const Home = () => {
               </div>
               <div>
                 <div className={styles.row}>
-                  <img src="/src/assets/check.png" />
+                  <img src="public/check.png" />
                   <h3>Approche Personnalisée : </h3>
                 </div>
                 <p>
@@ -198,7 +198,7 @@ export const Home = () => {
             <strong>ERP</strong> ) est une obligation à respecter.
           </p>
         </div>
-        <img src="/src/assets/cathe.png" />
+        <img src="public/cathe.png" />
       </div>
     </div>
   );

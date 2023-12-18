@@ -1,6 +1,6 @@
 /* Section Image Panoramique */
 .firstImage {
-  background-image: url(../../assets/imagePano1.png);
+  background-image: url(../../../public/imagePano1.png);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -255,12 +255,12 @@
   .column p {
     padding-left: 34px;
   }
-  
-.titlePourquoi h2 {
-  color: #d78e01;
-  font-size: 30px;
-  margin-top: 0;
-}
+
+  .titlePourquoi h2 {
+    color: #d78e01;
+    font-size: 30px;
+    margin-top: 0;
+  }
 
   /* Last Section */
 

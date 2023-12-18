@@ -20,7 +20,7 @@ export const Header = ({ opened, toggle }) => {
       <div className={styles.imgS}>
         <img
           className={styles.logo}
-          src="/src/assets/logo.png"
+          src="public/logo.png"
           alt="logo de l'entreprise"
         />
       </div>

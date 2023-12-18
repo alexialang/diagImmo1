@@ -61,7 +61,7 @@ export const Footer = () => {
         </div>
         <div>
           <h2>Certification</h2>
-          <img src="/src/assets/b2c.png" alt="B2C Certification" />
+          <img src="public/b2c.png" alt="B2C Certification" />
         </div>
       </div>
     </div>
