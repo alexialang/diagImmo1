@@ -14,10 +14,17 @@ import { ObligLoc } from "../../pages/AvtAchatLoc/ObligLoc";
 import { Devis } from "../../pages/Devis/Devis";
 import { Conf } from "../../pages/Conf/Conf";
 // import { Dtg } from "../../pages/AutresServices/Dtg";
-
 import { Footer } from "../Footer/Footer";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 export const Main = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <div>
       <Routes>

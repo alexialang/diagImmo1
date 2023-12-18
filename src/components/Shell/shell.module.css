@@ -1,6 +1,5 @@
 .main {
   padding: 0;
-  width: 100vw;
+  width: calc(100vw - 20px);
   height: 100vh;
-  overflow-x: hidden;
 }
