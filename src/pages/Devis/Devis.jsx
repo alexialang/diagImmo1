@@ -14,7 +14,7 @@ import emailJs from "@emailjs/browser";
 import { showNotification } from "@mantine/notifications";
 
 export const Devis = () => {
-  emailJs.init("yij5B0qq7jkBd8l4B");
+  emailJs.init(import.meta.env.VITE_MAILJS_API_KEY);
 
   const form = useForm({
     initialValues: {
@@ -45,26 +45,30 @@ export const Devis = () => {
 
   const sendEmail = (values) => {
     emailJs
-      .send("service_j6i38ke", "template_64iijd5", {
-        type: values.type,
-        wish: values.wish,
-        electric15: values.electric15,
-        gaz15: values.gaz15,
-        rooms: values.rooms,
-        surface: values.surface,
-        constructionDate: values.constructionDate,
-        heating: values.heating,
-        gazType: values.gazType,
-        coOwnership: values.coOwnership,
-        adress: values.adress,
-        postalCode: values.postalCode,
-        city: values.city,
-        moreInfo: values.moreInfo,
-        firstName: values.firstName,
-        lastName: values.lastName,
-        email: values.email,
-        phoneNumber: values.phoneNumber,
-      })
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID_DEVIS,
+        {
+          type: values.type,
+          wish: values.wish,
+          electric15: values.electric15,
+          gaz15: values.gaz15,
+          rooms: values.rooms,
+          surface: values.surface,
+          constructionDate: values.constructionDate,
+          heating: values.heating,
+          gazType: values.gazType,
+          coOwnership: values.coOwnership,
+          adress: values.adress,
+          postalCode: values.postalCode,
+          city: values.city,
+          moreInfo: values.moreInfo,
+          firstName: values.firstName,
+          lastName: values.lastName,
+          email: values.email,
+          phoneNumber: values.phoneNumber,
+        }
+      )
       .then(() => {
         showNotification({
           title: "Email envoyé",
