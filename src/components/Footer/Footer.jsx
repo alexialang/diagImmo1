@@ -1,5 +1,6 @@
 import classes from "./footer.module.css";
 import { Link } from "react-router-dom";
+import imgUrl from "../../assets/b2c.png";
 
 export const Footer = () => {
   return (
@@ -61,7 +62,7 @@ export const Footer = () => {
         </div>
         <div>
           <h2>Certification</h2>
-          <img src="public/b2c.png" alt="B2C Certification" />
+          <img src={imgUrl} alt="B2C Certification" />
         </div>
       </div>
     </div>

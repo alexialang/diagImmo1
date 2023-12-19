@@ -3,6 +3,7 @@ import styles from "./header.module.css";
 import { Button, Menu, Burger } from "@mantine/core";
 import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
+import imgUrl from "../../assets/logo.png";
 
 export const Header = ({ opened, toggle }) => {
   const navigate = useNavigate();
@@ -18,11 +19,7 @@ export const Header = ({ opened, toggle }) => {
         }}
       />
       <div className={styles.imgS}>
-        <img
-          className={styles.logo}
-          src="public/logo.png"
-          alt="logo de l'entreprise"
-        />
+        <img className={styles.logo} src={imgUrl} alt="logo de l'entreprise" />
       </div>
       <div className={styles.nav}>
         <Link to="/">

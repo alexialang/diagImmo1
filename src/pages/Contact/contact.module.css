@@ -2,7 +2,7 @@
   margin-top: 80px;
 }
 .backgroundImg {
-  background-image: url(../../../public/contact.png);
+  background-image: url(../../assets/contact.png);
   height: 200px;
   width: 100%;
   background-size: cover;
@@ -65,7 +65,7 @@ form h2 {
   margin-top: 10px;
 }
 .imgPano {
-  background-image: url(../../../public/contact.png);
+  background-image: url(../../assets/contact.png);
   height: 250px;
   width: 100%;
   background-size: cover;

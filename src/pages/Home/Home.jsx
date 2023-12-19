@@ -2,6 +2,11 @@ import { Button } from "@mantine/core";
 import styles from "./home.module.css";
 import { Link } from "react-router-dom";
 import { ChevronRightIcon } from "@radix-ui/react-icons";
+import imgUrlMaison3 from "../../assets/maison3.png";
+import imgUrlPoigneeMains from "../../assets/poigneeMains.png";
+import imgUrlBatimentMetz from "../../assets/batimentMetz.png";
+import imgUrlCheck from "../../assets/check.png";
+import imgUrlCathe from "../../assets/cathe.png";
 
 export const Home = () => {
   return (
@@ -66,7 +71,7 @@ export const Home = () => {
                 <div className={styles.colorBlock}>
                   <img
                     className={styles.imgHouse}
-                    src="public/maison3.png"
+                    src={imgUrlMaison3}
                     alt="photo d'une maison"
                   />
                 </div>
@@ -80,7 +85,7 @@ export const Home = () => {
                 <div className={styles.colorBlock}>
                   <img
                     className={styles.imgHands}
-                    src="public/poigneeMains.png"
+                    src={imgUrlPoigneeMains}
                     alt="poignée de main"
                   />
                 </div>
@@ -100,7 +105,7 @@ export const Home = () => {
         <div>
           <img
             className={styles.imgPourquoi}
-            src="public/batimentMetz.png"
+            src={imgUrlBatimentMetz}
             alt="Batiment en pierres jaunes et Batiment en pierre rouge"
           />
         </div>
@@ -119,7 +124,7 @@ export const Home = () => {
             <div className={styles.column}>
               <div>
                 <div className={styles.row}>
-                  <img src="public/check.png" />
+                  <img src={imgUrlCheck} />
                   <h3>Expertise Approfondie</h3>
                 </div>
                 <p>
@@ -130,7 +135,7 @@ export const Home = () => {
               </div>
               <div>
                 <div className={styles.row}>
-                  <img src="public/check.png" />
+                  <img src={imgUrlCheck} />
                   <h3>Conseils Personnalisés </h3>
                 </div>
                 <p>
@@ -143,7 +148,7 @@ export const Home = () => {
             <div className={styles.column}>
               <div>
                 <div className={styles.row}>
-                  <img src="public/check.png" />
+                  <img src={imgUrlCheck} />
                   <h3>Minimisation des Risques : </h3>
                 </div>
                 <p>
@@ -154,7 +159,7 @@ export const Home = () => {
               </div>
               <div>
                 <div className={styles.row}>
-                  <img src="public/check.png" />
+                  <img src={imgUrlCheck} />
                   <h3>Approche Personnalisée : </h3>
                 </div>
                 <p>
@@ -198,7 +203,7 @@ export const Home = () => {
             <strong>ERP</strong> ) est une obligation à respecter.
           </p>
         </div>
-        <img src="public/cathe.png" />
+        <img src={imgUrlCathe} />
       </div>
     </div>
   );
