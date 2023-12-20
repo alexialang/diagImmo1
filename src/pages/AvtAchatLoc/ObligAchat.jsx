@@ -8,43 +8,43 @@ export const ObligAchat = () => {
       <div className={styles.backgroundImg}>
         <h1>Vos Obligations d’Achat</h1>
         <div className={styles.block}>
-          <p>Vos Obligations d’Achat</p>
+          <p className={styles.txt}>Vos Obligations d’Achat</p>
         </div>
       </div>
       <div className={styles.txt}>
-        <p>Lors d’une vente immobilière en France, plusieurs diagnostics sont obligatoires pour garantir la transparence et la sécurité de la transaction. Ces obligations sont édictées par la législation et visent à informer les parties prenantes sur l’état du bien.</p>
+        <p className={styles.txt}>Lors d’une vente immobilière en France, plusieurs diagnostics sont obligatoires pour garantir la transparence et la sécurité de la transaction. Ces obligations sont édictées par la législation et visent à informer les parties prenantes sur l’état du bien.</p>
          <p className={styles.fontsize}>Voici une liste des diagnostics immobiliers nécessaires lors d’une vente :</p>
 
         <div className={styles.column}> 
         <h2>Diagnostic de Performance Énergétique (DPE) :</h2>
-        <p>Obligatoire pour évaluer la performance énergétique du logement.
+        <p className={styles.txt}>Obligatoire pour évaluer la performance énergétique du logement.
         Inclus dans les annonces immobilières.
         Valide pendant 10 ans, sauf en cas de travaux significatifs.</p>
         </div>
 
         <div className={styles.column}>
         <h2>Diagnostic Amiante :</h2>
-        <p>Obligatoire si le permis de construire a été déposé avant 1997.
+        <p className={styles.txt}>Obligatoire si le permis de construire a été déposé avant 1997.
            Vise à détecter la présence d’amiante dans le bâtiment.
         </p>
         </div>
         <div className={styles.column}>
         <h2>Diagnostic Plomb (CREP) :</h2>
-        <p>Requis pour les constructions antérieures à 1949.
+        <p className={styles.txt}>Requis pour les constructions antérieures à 1949.
            Évalue la présence de plomb, notamment dans les peintures.
         </p>
         </div>
 
         <div className={styles.column}>
         <h2>Diagnostic Électrique :</h2>
-        <p>Obligatoire si l’installation électrique a plus de 15 ans.
+        <p className={styles.txt}>Obligatoire si l’installation électrique a plus de 15 ans.
            Vérifie la conformité et la sécurité des équipements électriques.
         </p>
         </div>
 
         <div className={styles.column}>
         <h2>Diagnostic Gaz :</h2>
-        <p>Nécessaire pour les installations de gaz de plus de 15 ans.
+        <p className={styles.txt}>Nécessaire pour les installations de gaz de plus de 15 ans.
            Évalue la sécurité des équipements gaziers.
         </p>
         </div>

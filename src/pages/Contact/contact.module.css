@@ -53,7 +53,7 @@
 
 }
 
-form h2{
+.formH2{
   background-color:#e09b14;
   padding: 6px 100px;
   margin-top: 30px;
@@ -110,7 +110,7 @@ form h2{
   text-decoration:2px underline #e09b14;
  }
   
-h2{
+.h2{
   margin-block-start: 0;
 }
 

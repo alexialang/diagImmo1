@@ -38,7 +38,7 @@ export const Contact = () => {
       <section>
 
         <div className={styles.blockQuiSommesNous}>
-          <div><h2>Qui somme nous ?</h2></div>
+          <div><h2 className={styles.h2}>Qui somme nous ?</h2></div>
             <div className={styles.txt}>
               <p>Notre entreprise de diagnostic immobilier, active dans les départements 57, 54 et 55, excelle dans la fourniture de diagnostics conformes aux normes réglementaires. Forts d’une équipe expérimentée, nous assurons une expertise technique complète, une conformité rigoureuse, une réactivité accrue et une transparence totale. Couvrant divers diagnostics, nous facilitons des transactions immobilières sûres et transparentes pour nos clients, qu’il s’agisse de ventes ou locations.
               </p>
@@ -52,7 +52,7 @@ export const Contact = () => {
         <div>
           <Box>
             <form className={styles.form} onSubmit={form.onSubmit(sendEmail)}>
-              <h2>Formulaire de contact</h2>
+              <h2 className={styles.formH2}>Formulaire de contact</h2>
               <TextInput
                 withAsterisk
                 label="Nom"

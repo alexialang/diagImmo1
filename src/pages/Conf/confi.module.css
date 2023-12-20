@@ -4,10 +4,10 @@
   margin:100px;
   font-size: 14px;
 } 
-  h2{
+  .h2Conf{
     font-size: 18px;
   }
-  h1{
+  .h1Conf{
     font-size: 22px;
   }
 }
@@ -21,8 +21,8 @@
   font-size: 12px;
   
 } 
-  h2 {
+  .h2Conf {
     font-size: 15px;
   }
-  h1 {
+  .h1Conf {
    font-size: 18px;}

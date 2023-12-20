@@ -9,17 +9,18 @@ export const Amiante = () => {
         <div className={styles.divSize}>
           <h1>Amiante</h1>
           <div className={styles.block}>
-            <p>Amiante</p>
+            <p className={styles.p}>Amiante</p>
           </div>
         </div>
       </div>
       <div className={styles.txt}>
+        <p className={styles.txt}>
         Bienvenue chez <strong>GPADI</strong>, votre partenaire de confiance pour tous vos
         besoins en <strong>diagnostics immobiliers</strong>. Nous comprenons l’importance de
         garantir la <strong>sécurité</strong> et la <strong>conformité</strong>, et c’est pourquoi nous mettons en avant notre <strong>expertise</strong> en
-        matière de <strong>diagnostic</strong> <strong>Amiante</strong>.
+        matière de <strong>diagnostic</strong> <strong>Amiante</strong>.</p>
         <h2>Qu’est-ce que le Diagnostic <strong>Amiante</strong> ?</h2>
-        <p>
+        <p className={styles.txt}>
           Le diagnostic <strong>Amiante</strong> est une étape essentielle lors de la vente ou de
           la localisation d’un <strong>bien immobilier</strong> construit avant le 1er juillet
           1997. Il vise à détecter la présence éventuelle d’amiante, un matériau
@@ -27,27 +28,27 @@ export const Amiante = () => {
           occupants.
         </p>
         <h2>Obligations et dates importantes</h2>
-        <h3>· Obligation Légale :</h3>
-        <p>
+        <h3 className={styles.h3}>· Obligation Légale :</h3>
+        <p className={styles.txt}>
           Le diagnostic Amiante est une obligation légale visant à protéger la
           santé publique. Il doit être inclus dans les dossiers de technique de
           diagnostic lors de la mise en vente ou en localisation.
         </p>
-        <h3>· Validité du Diagnostic :</h3>
-        <p>
+        <h3 className={styles.h3}>· Validité du Diagnostic :</h3>
+        <p className={styles.txt}>
           La validité du diagnostic Amiante est de 3 ans. Une mise à jour est
           nécessaire si des travaux susceptibles de libérer de l’amiante ont été
           effectués.
         </p>
         <h2>Notre Engagement envers la Conformité</h2>
-        <p>
+        <p className={styles.txt}>
           Chez <strong>GPADI</strong>, nous nous engageons à assurer une totale conformité avec
           les exigences du diagnostic Amiante. Nos diagnostiqueurs expérimentés
           sont formés pour détecter toute présence d’amiante et fournir des
           recommandations appropriées.
         </p>
         <h2>Pourquoi nous choisir pour votre Diagnostic Amiante ?</h2>
-        <p>
+        <p className={styles.txt}>
           · Expertise Approfondie : Nos diagnostiqueurs sont certifiés et
           experts dans la réalisation de diagnostics Amiante conforme aux normes
           en vigueur.
