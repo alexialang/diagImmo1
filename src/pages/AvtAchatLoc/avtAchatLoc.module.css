@@ -1,7 +1,7 @@
 .root {
   margin-top: 80px;
 }
-.fontweight{
+.fontweight {
   font-weight: normal;
 }
 .bold {
@@ -9,7 +9,7 @@
 }
 
 .backgroundImg {
-  background-image: url(../../assets/imagePanoAchatLoc.jpg);
+  background-image: url(public/imagePanoAchatLoc.jpg);
   height: 200px;
   width: 100%;
   background-size: cover;
@@ -75,7 +75,7 @@
   margin-block-start: 3px;
   font-size: 13px;
 }
-.fontsize{
+.fontsize {
   font-size: 17px;
 }
 h3 {
