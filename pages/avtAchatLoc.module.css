@@ -1,0 +1,86 @@
+.root {
+  margin-top: 80px;
+}
+.fontweight {
+  font-weight: normal;
+}
+.bold {
+  font-weight: 600;
+}
+
+.backgroundImg {
+  background-image: url(/imagePanoAchatLoc.jpg);
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  & h1 {
+    color: #909090;
+    background-color: #909090;
+    opacity: 40%;
+    padding: 20px 40px;
+    border-radius: 50px;
+    margin-top: 70px;
+  }
+}
+
+.backgroundImg .block {
+  position: absolute;
+  font-size: 40px;
+  color: white;
+  margin-top: 70px;
+}
+
+.txt {
+  width: 75%;
+  margin: auto;
+  font-size: 13px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-top: 30px;
+}
+.txt h2 {
+  font-size: 20px;
+}
+.txt h3 {
+  font-size: 15px;
+}
+.txtColor {
+  color: #e09b14;
+}
+
+.underline {
+  text-decoration: underline solid darkorange 1px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
+  margin-block-end: 0;
+}
+
+.column h2 {
+  margin-block-end: 0;
+  margin-block-start: 3px;
+  font-size: 13px;
+}
+.fontsize {
+  font-size: 17px;
+}
+.h3 {
+  margin-block-end: 0;
+}
+.p {
+  margin-block-start: 0;
+}

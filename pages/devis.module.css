@@ -1,0 +1,102 @@
+.root {
+  margin-top: 80px;
+}
+.backgroundImg {
+  background-image: url(/daniel-mccullough--FPFq_trr2Y-unsplash2.jpg);
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & h1 {
+    color: #909090;
+    background-color: #909090;
+    opacity: 40%;
+    padding: 20px 40px;
+    border-radius: 50px;
+    margin-top: 70px;
+  }
+}
+.divSize {
+  position: relative;
+}
+.backgroundImg .block {
+  position: absolute;
+  font-size: 40px;
+  color: white;
+  margin-top: 70px;
+  top: 0;
+  left: 0;
+  padding-left: 50px;
+  padding-top: 14px;
+}
+
+.divForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.marginTop {
+  margin-top: 10px;
+  margin: 10px 20px;
+}
+
+.colorBox {
+  padding: 6px 100px;
+  background-color: #e09b14;
+  margin-top: 30px;
+}
+.colorBox2 {
+  padding: 6px 4px;
+  background-color: #e09b14;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+.colorBox2 h2 {
+  color: white;
+  margin: 0;
+  font-weight: 300;
+  text-align: center;
+}
+
+.colorBox h2 {
+  color: white;
+  margin: 0;
+  font-weight: 300;
+}
+.form {
+  background-color: #f5f5f5;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 20px;
+  box-shadow: -2px 0px 21px 7px #d9d9d9;
+}
+@media (min-width: 1000px) {
+  .colorBox h2 {
+    font-size: 20px;
+  }
+
+  .divForm {
+    width: 100%;
+  }
+
+  .colorBox {
+    padding: 6px 200px;
+    background-color: #e09b14;
+    margin-top: 30px;
+  }
+  .colorBox2 {
+    padding: 6px 100px;
+    background-color: #e09b14;
+    margin-top: 30px;
+  }
+  .marginTop {
+    margin-top: 12px 0;
+  }
+}

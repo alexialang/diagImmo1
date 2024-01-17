@@ -1,0 +1,271 @@
+/* Section Image Panoramique */
+.firstImage {
+  background-image: url(/imagePano1.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.buttonFirstImg {
+  margin-bottom: 40px;
+  background-color: #a773b0ca;
+  border-color: white;
+}
+.buttonFirstImg:hover {
+  border-color: white;
+}
+
+/* Section 2 */
+
+.section2 {
+  background-color: #f1eeee;
+  padding-bottom: 50px;
+}
+
+.li {
+  padding-left: 15px;
+  font-size: 14px;
+}
+
+.texte h2 {
+  margin-top: 50px;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.texte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.texte h2,
+.purpleTxt {
+  color: #a773b0;
+}
+.section2 img {
+  width: 250px;
+  transition: all 0.3s ease;
+}
+
+.section2 img:hover {
+  width: 260px;
+  transition: all 0.3s ease;
+}
+.divImg {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 20px;
+  margin-left: 100px;
+}
+
+.linkTxt {
+  color: black;
+}
+
+.linkTxt:hover {
+  color: rgb(59, 57, 57);
+}
+
+.purpleButton {
+  border: solid 1px white;
+  &:hover {
+    border: solid 1px white;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+/* Section deux images achat et loc  */
+.boxTxtImg {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.divSize {
+  height: 250px;
+  width: 250px;
+}
+
+.colorBlock {
+  width: 200px;
+  height: 240px;
+  background-color: #ffc149;
+  position: relative;
+}
+
+.imgHouse {
+  position: absolute;
+  width: 200px !important;
+  height: 200px;
+  top: 40%;
+  left: 60px;
+  transform: translate(-50%, -50%);
+}
+
+.imgHands {
+  position: absolute;
+  width: 250px !important;
+  height: 200px;
+  top: 40%;
+  left: 60px;
+  transform: translate(-50%, -50%);
+}
+
+/* Section Pourquoi */
+.divPourquoi {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgPourquoi {
+  width: 200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.column p {
+  padding-top: 5px;
+}
+
+.column h3 {
+  padding-left: 10px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.row img {
+  width: 16px;
+  height: 16px;
+}
+
+.titlePourquoi h2 {
+  color: #d78e01;
+}
+.titlePourquoi p {
+  font-weight: 500;
+}
+
+/* Derniere Section */
+.titleLastSection {
+  color: #d78e01;
+  text-align: center;
+}
+.txtLastSection {
+  background-color: #f1eeee;
+  padding: 20px;
+}
+.lastSection {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  clear: both;
+}
+.lastSection img {
+  width: 300px;
+  height: 190px;
+  display: flex;
+}
+
+@media (min-width: 1000px) {
+  /* Section 1 */
+
+  .firstImage {
+    height: 510px;
+  }
+
+  /* Section 2 */
+
+  .section2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 7%;
+    padding-bottom: 50px;
+  }
+
+  .texte {
+    box-sizing: border-box;
+    width: 40%;
+    padding-right: 20px;
+  }
+
+  .divImg {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /* Section Pourquoi Nous Choisir */
+  .imgPourquoi {
+    width: 500px;
+    margin-top: 70px;
+  }
+  .divPourquoi {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  .txtPourquoi {
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    margin-left: 50px;
+    padding-top: 100px;
+  }
+
+  .row img {
+    width: 24px;
+    height: 24px;
+  }
+  .column {
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 10px;
+  }
+  .column p {
+    padding-left: 34px;
+  }
+
+  /* Last Section */
+
+  .lastSection {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin: auto;
+  }
+
+  .lastSection img {
+    padding-left: 30px;
+    width: 420px;
+    height: 290px;
+  }
+}
