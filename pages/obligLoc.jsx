@@ -12,7 +12,7 @@ const ObligLoc = () => {
           <p className={styles.txt}>Vos Obligations de Location</p>
         </div>
       </div>
-      <div className={styles.txt}>
+      <div className={styles.txtblock}>
         <p className={styles.txt}>
           Lors de la mise en location d’un bien immobilier en France,
           différentes obligations en matière de diagnostics immobiliers doivent

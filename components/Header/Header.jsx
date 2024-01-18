@@ -21,7 +21,6 @@ export const Header = ({ opened, toggle }) => {
         }}
       />
       <div className={styles.imgS}>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
         <Image className={styles.logo} src={logo} alt="logo de l'entreprise" />
       </div>
       <div className={styles.nav}>
@@ -29,6 +28,7 @@ export const Header = ({ opened, toggle }) => {
           <Button variant="subtle">Accueil</Button>
         </Link>
         <Menu
+          color="#a773b0"
           position="bottom"
           trigger="hover"
           openDelay={100}

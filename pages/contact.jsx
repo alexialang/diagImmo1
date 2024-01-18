@@ -54,7 +54,7 @@ const Contact = () => {
           <div className={styles.txt}>
             <p>
               Notre entreprise de diagnostic immobilier, active dans les
-              départements 57, 54 et 55, excelle dans la fourniture de
+              départements de la Moselle et le Meurthe-et-Moselle excelle dans la fourniture de
               diagnostics conformes aux normes réglementaires. Forts d’une
               équipe expérimentée, nous assurons une expertise technique
               complète, une conformité rigoureuse, une réactivité accrue et une

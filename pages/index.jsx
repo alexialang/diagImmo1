@@ -20,10 +20,9 @@ const Home = () => {
           <Button
             className={styles.buttonFirstImg}
             variant="filled"
-            color="yellow"
             size="xl"
             radius="xl"
-            rightSection={<ChevronRightIcon />}
+            rightSection={<ChevronRightIcon className={styles.chevron}/>}
           >
             Demande de Devis
           </Button>
@@ -56,7 +55,7 @@ const Home = () => {
           <p className={styles.purpleTxt}>
             Besoin d’un DEVIS diagnostic immobilier ?
           </p>
-          <Link href="/devis">
+          <Link href="/devis" >
             <Button
               className={styles.purpleButton}
               variant="filled"

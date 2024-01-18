@@ -27,11 +27,10 @@
   position: absolute;
   font-size: 40px;
   color: white;
-  margin-top: 70px;
   top: 0;
   left: 0;
-  padding-left: 90px;
-  padding-top: 14px;
+  padding-left: 32px;
+  padding-top: 42px;
 }
 
 .divForm {

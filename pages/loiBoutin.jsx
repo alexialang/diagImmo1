@@ -12,7 +12,7 @@ const LoiBoutin = () => {
           <p className={styles.txt}>Loi Boutin</p>
         </div>
       </div>
-      <div className={styles.txt}>
+      <div className={styles.txtblock}>
         <p className={styles.txt}>
           Bienvenue chez <strong>GPADI</strong>, votre partenaire de confiance
           pour tous vos besoins en{" "}

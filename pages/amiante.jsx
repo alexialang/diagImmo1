@@ -10,11 +10,11 @@ const Amiante = () => {
         <div className={styles.divSize}>
           <h1>Amiante</h1>
           <div className={styles.block}>
-            <p className={styles.p}>Amiante</p>
+            <p className="p">Amiante</p>
           </div>
         </div>
       </div>
-      <div className={styles.txt}>
+      <div className={styles.txtblock}>
         <p className={styles.txt}>
           Bienvenue chez <strong>GPADI</strong>, votre partenaire de confiance
           pour tous vos besoins en <strong>diagnostics immobiliers</strong>.
@@ -26,7 +26,7 @@ const Amiante = () => {
         <h2>
           Qu’est-ce que le Diagnostic <strong>Amiante</strong> ?
         </h2>
-        <p className={styles.txt}>
+        <p className="txt">
           Le diagnostic <strong>Amiante</strong> est une étape essentielle lors
           de la vente ou de la localisation d’un{" "}
           <strong>bien immobilier</strong> construit avant le 1er juillet 1997.

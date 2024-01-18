@@ -12,7 +12,7 @@ const ObligAchat = () => {
           <p className={styles.txt}>Vos Obligations d’Achat</p>
         </div>
       </div>
-      <div className={styles.txt}>
+      <div className={styles.txtblock}>
         <p className={styles.txt}>
           Lors d’une vente immobilière en France, plusieurs diagnostics sont
           obligatoires pour garantir la transparence et la sécurité de la

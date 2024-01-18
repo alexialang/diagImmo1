@@ -11,7 +11,8 @@ const DiagElec = () => {
         <div className={styles.block}>
           <p>Diagnostic Electrique</p>
         </div>
-      </div>
+      </div >
+      <div className={styles.txtblock}>
       <div className={styles.txt}>
         Bienvenue chez <strong>GPADI</strong>, votre partenaire de confiance
         pour tous vos besoins en{" "}
@@ -95,6 +96,7 @@ const DiagElec = () => {
           </Link>
         </div>
       </div>
+    </div>
     </div>
   );
 };

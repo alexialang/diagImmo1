@@ -9,10 +9,10 @@ const Dpe = () => {
       <div className={styles.backgroundImg}>
         <h1>Dpe</h1>
         <div className={styles.block}>
-          <p className={styles.txt}>Dpe</p>
+          <p className="txt">Dpe</p>
         </div>
       </div>
-      <div className={styles.txt}>
+      <div className={styles.txtblock}>
         <p className={styles.txt}>
           Bienvenue chez <strong>GPADI</strong>, votre partenaire de confiance
           pour tous vos besoins en{" "}
