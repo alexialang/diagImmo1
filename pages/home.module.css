@@ -77,7 +77,9 @@
 
 .linkTxt:hover {
   color: rgb(59, 57, 57);
+  text-decoration: none !important;
 }
+
 
 .purpleButton {
   background-color: #a773b0;
