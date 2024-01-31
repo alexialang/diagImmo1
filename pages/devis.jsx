@@ -102,6 +102,7 @@ const Devis = () => {
                 required
               />
               <Radio.Group
+                color="#a773b0" 
                 className={styles.marginTop}
                 label="Vous souhaitez "
                 withAsterisk
@@ -109,8 +110,8 @@ const Devis = () => {
                 {...form.getInputProps("wish")}
               >
                 <Group>
-                  <Radio label="Vendre" value="vendre" />
-                  <Radio label="Louer" value="louer" />
+                  <Radio color="#a773b0" label="Vendre" value="vendre" />
+                  <Radio color="#a773b0" label="Louer" value="louer" />
                 </Group>
               </Radio.Group>
 
@@ -143,6 +144,7 @@ const Devis = () => {
                 required
               />
               <Radio.Group
+                color="#a773b0" 
                 className={styles.marginTop}
                 label="Copropriété"
                 withAsterisk
@@ -150,9 +152,9 @@ const Devis = () => {
                 {...form.getInputProps("coOwnership")}
               >
                 <Group>
-                  <Radio label="Oui" value="yes" />
-                  <Radio label="Non" value="no" />
-                  <Radio label="Je ne sais pas" value="dontKnow" />
+                  <Radio color="#a773b0" label="Oui" value="yes" />
+                  <Radio color="#a773b0" label="Non" value="no" />
+                  <Radio color="#a773b0"  label="Je ne sais pas" value="dontKnow" />
                 </Group>
               </Radio.Group>
               <Select
@@ -204,6 +206,7 @@ const Devis = () => {
                 required
               />
               <Radio.Group
+                color="#a773b0" 
                 className={styles.marginTop}
                 required
                 label="Installation elec +15ans"
@@ -211,11 +214,12 @@ const Devis = () => {
                 {...form.getInputProps("electric15")}
               >
                 <Group>
-                  <Radio label="Oui" value="yes" />
-                  <Radio label="Non" value="no" />
+                  <Radio color="#a773b0" label="Oui" value="yes" />
+                  <Radio color="#a773b0" label="Non" value="no" />
                 </Group>
               </Radio.Group>
               <Radio.Group
+                color="#a773b0" 
                 className={styles.marginTop}
                 label="Installation gaz +15ans"
                 withAsterisk
@@ -223,8 +227,8 @@ const Devis = () => {
                 required
               >
                 <Group>
-                  <Radio label="Oui" value="yes" />
-                  <Radio label="Non" value="no" />
+                  <Radio color="#a773b0" label="Oui" value="yes" />
+                  <Radio color="#a773b0" label="Non" value="no" />
                 </Group>
               </Radio.Group>
               <TextInput
@@ -291,6 +295,7 @@ const Devis = () => {
               />
 
               <Checkbox
+              color="#a773b0" 
                 className={styles.marginTop}
                 defaultChecked
                 label={
@@ -303,7 +308,7 @@ const Devis = () => {
                 }
               />
               <Group justify="center" mt="md">
-                <Button type="submit" color="" className={styles.marginTop}>
+                <Button type="submit"  color="#a773b0" className={styles.marginTop}>
                   Envoyer
                 </Button>
               </Group>

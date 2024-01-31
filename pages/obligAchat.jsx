@@ -66,7 +66,7 @@ const ObligAchat = () => {
 
         <div className={styles.column}>
           <h2>Diagnostic Termites :</h2>
-          <p>
+          <p className={styles.txt}>
             Obligatoire si un arrêté préfectoral ou communal le prescrit. Vise à
             détecter la présence de termites ou d’autres insectes xylophages.
           </p>
@@ -74,7 +74,7 @@ const ObligAchat = () => {
 
         <div className={styles.column}>
           <h2>Mesurage Loi Carrez :</h2>
-          <p>
+          <p className={styles.txt}>
             Requis pour les biens en copropriété. Mesure la superficie privative
             du lot vendu.
           </p>
@@ -82,7 +82,7 @@ const ObligAchat = () => {
 
         <div className={styles.column}>
           <h2>État des Risques et Pollutions (ERP) :</h2>
-          <p>
+          <p className={styles.txt}>
             Informe sur les risques naturels, technologiques, et les pollutions
             du secteur.
           </p>
@@ -90,7 +90,7 @@ const ObligAchat = () => {
 
         <div className={styles.column}>
           <h2>Diagnostic Technique Global (DTG) :</h2>
-          <p>
+          <p className={styles.txt}>
             Obligatoire dans certaines copropriétés. Évalue l’état général du
             bâtiment et anticipe les travaux nécessaires.
           </p>

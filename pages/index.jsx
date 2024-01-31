@@ -67,7 +67,7 @@ const Home = () => {
           </Link>
         </div>
         <div className={styles.divImg}>
-          <Link href="/obligAchat">
+          <Link className={styles.linkTxt} href="/obligAchat">
             <div className={styles.boxTxtImg}>
               <div className={styles.divSize}>
                 <div className={styles.colorBlock}>
@@ -78,10 +78,10 @@ const Home = () => {
                   />
                 </div>
               </div>
-              <h3 className={styles.linkTxt}>Vos obligations d’Achat</h3>
+              <h3 >Vos obligations d’Achat</h3>
             </div>
           </Link>
-          <Link href="/obligLoc">
+          <Link className={styles.linkTxt} href="/obligLoc">
             <div className={styles.boxTxtImg}>
               <div className={styles.divSize}>
                 <div className={styles.colorBlock}>
@@ -127,7 +127,7 @@ const Home = () => {
               <div>
                 <div className={styles.row}>
                   <Image src={check} alt="check mark logo" />
-                  <h3>Expertise Approfondie</h3>
+                  <h3>Expertise Approfondie :</h3>
                 </div>
                 <p>
                   Bénéficiez de l’expérience de diagnostiqueurs certifiés,
@@ -138,7 +138,7 @@ const Home = () => {
               <div>
                 <div className={styles.row}>
                   <Image src={check} alt="check mark logo" />
-                  <h3>Conseils Personnalisés </h3>
+                  <h3>Conseils Personnalisés : </h3>
                 </div>
                 <p>
                   Profitez de conseils personnalisés pour répondre à vos besoins

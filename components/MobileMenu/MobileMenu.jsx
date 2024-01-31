@@ -15,6 +15,7 @@ export const MobileMenu = ({ onClose }) => {
   return (
     <>
       <Link
+      className={classes.c}
         href="/"
         onClick={() => {
           handleClick("/");
@@ -31,6 +32,7 @@ export const MobileMenu = ({ onClose }) => {
         childrenOffset={28}
       >
         <Link
+        className={classes.c}
           href="/dpe"
           onClick={() => {
             handleClick("/dpe");
@@ -40,6 +42,7 @@ export const MobileMenu = ({ onClose }) => {
         </Link>
 
         <Link
+        className={classes.c}
           href="/erp"
           onClick={() => {
             handleClick("/erp");
@@ -48,6 +51,7 @@ export const MobileMenu = ({ onClose }) => {
           <NavLink className={classes.link} label="ERP"></NavLink>
         </Link>
         <Link
+        className={classes.c}
           href="/loicarrez"
           onClick={() => {
             handleClick("/loicarrez");
@@ -56,6 +60,7 @@ export const MobileMenu = ({ onClose }) => {
           <NavLink className={classes.link} label="Loi Carrez"></NavLink>
         </Link>
         <Link
+        className={classes.c}
           href="/diagGaz"
           onClick={() => {
             handleClick("/diagGaz");
@@ -64,6 +69,7 @@ export const MobileMenu = ({ onClose }) => {
           <NavLink className={classes.link} label="Diagnostic Gaz"></NavLink>
         </Link>
         <Link
+        className={classes.c}
           href="/diagPlomb"
           onClick={() => {
             handleClick("/diagPlomb");
@@ -72,6 +78,7 @@ export const MobileMenu = ({ onClose }) => {
           <NavLink className={classes.link} label="Diagnostic Plomb"></NavLink>
         </Link>
         <Link
+        className={classes.c}
           href="/diag_elec"
           onClick={() => {
             handleClick("/diag_elec");
@@ -80,6 +87,7 @@ export const MobileMenu = ({ onClose }) => {
           <NavLink className={classes.link} label="Diagnostic Plomb"></NavLink>
         </Link>
         <Link
+        className={classes.c}
           href="/obligations_vente"
           onClick={() => {
             handleClick("/obligations_vente");
@@ -101,6 +109,7 @@ export const MobileMenu = ({ onClose }) => {
         defaultOpened
       >
         <Link
+        className={classes.c}
           href="/dpe"
           onClick={() => {
             handleClick("/");
@@ -109,6 +118,7 @@ export const MobileMenu = ({ onClose }) => {
           <NavLink className={classes.link} label="DPE"></NavLink>
         </Link>
         <Link
+        className={classes.c}
           href="/erp"
           onClick={() => {
             handleClick("/");
@@ -117,6 +127,7 @@ export const MobileMenu = ({ onClose }) => {
           <NavLink className={classes.link} label="ERP"></NavLink>
         </Link>
         <Link
+        className={classes.c}
           href="/loi_boutin"
           onClick={() => {
             handleClick("/");
@@ -125,6 +136,7 @@ export const MobileMenu = ({ onClose }) => {
           <NavLink className={classes.link} label="Loi Boutin"></NavLink>
         </Link>
         <Link
+        className={classes.c}
           href="/diagGaz"
           onClick={() => {
             handleClick("/");
@@ -133,6 +145,7 @@ export const MobileMenu = ({ onClose }) => {
           <NavLink className={classes.link} label="Diagnostic Gaz"></NavLink>
         </Link>
         <Link
+        className={classes.c}
           href="Diagnostic Plomb"
           onClick={() => {
             handleClick("/");
@@ -141,6 +154,7 @@ export const MobileMenu = ({ onClose }) => {
           <NavLink className={classes.link} label="Diagnostic Plomb"></NavLink>
         </Link>
         <Link
+        className={classes.c}
           href="/diagElec"
           onClick={() => {
             handleClick("/");
@@ -152,6 +166,7 @@ export const MobileMenu = ({ onClose }) => {
           ></NavLink>
         </Link>
         <Link
+        className={classes.c}
           href="/obligLoc"
           onClick={() => {
             handleClick("/");
@@ -164,6 +179,7 @@ export const MobileMenu = ({ onClose }) => {
         </Link>
       </NavLink>
       <Link
+      className={classes.c}
         href="/devis"
         onClick={() => {
           handleClick("/");
@@ -172,6 +188,7 @@ export const MobileMenu = ({ onClose }) => {
         <NavLink className={classes.link} label="Devis"></NavLink>
       </Link>
       <Link
+      className={classes.c}
         href="/contact"
         onClick={() => {
           handleClick("/");

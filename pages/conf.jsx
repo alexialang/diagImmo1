@@ -61,7 +61,7 @@ const Conf = () => {
         <p>
           Si vous avez des questions concernant notre politique de
           confidentialité, n’hésitez pas à nous contacter à l’adresse suivante :
-          [Votre Adresse Email].
+          gpaudit@gmail.com.
         </p>
         <p>
           Merci de faire confiance à Gpadi pour vos besoins en diagnostic

@@ -1,3 +1,12 @@
+.c {
+  color: #a773b0;
+
+}
+
+.c:hover{
+    background-color: #a773b04e;
+}
+
 .imgS {
   display: flex;
   justify-content: center;

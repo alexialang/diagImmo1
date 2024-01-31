@@ -25,7 +25,7 @@ export const Header = ({ opened, toggle }) => {
       </div>
       <div className={styles.nav}>
         <Link href="/">
-          <Button variant="subtle">Accueil</Button>
+          <Button className={styles.c}  variant="subtle">Accueil</Button>
         </Link>
         <Menu
           color="#a773b0"
@@ -38,7 +38,7 @@ export const Header = ({ opened, toggle }) => {
           }}
         >
           <Menu.Target>
-            <Button variant="subtle">Avant la vente</Button>
+            <Button className={styles.c} variant="subtle">Avant la vente</Button>
           </Menu.Target>
           <Menu.Dropdown>
             <Menu.Item
@@ -50,6 +50,7 @@ export const Header = ({ opened, toggle }) => {
               DPE
             </Menu.Item>
             <Menu.Item
+            className={styles.c}
               onClick={() => {
                 router.push("/erp");
               }}
@@ -57,13 +58,15 @@ export const Header = ({ opened, toggle }) => {
               ERP
             </Menu.Item>
             <Menu.Item
+            className={styles.c}
               onClick={() => {
-                router.push("/loicarrez");
+                router.push("/loiCarrez");
               }}
             >
               Loi Carrez
             </Menu.Item>
             <Menu.Item
+            className={styles.c}
               onClick={() => {
                 router.push("/diagGaz");
               }}
@@ -103,7 +106,7 @@ export const Header = ({ opened, toggle }) => {
           }}
         >
           <Menu.Target>
-            <Button variant="subtle">Avant la location</Button>
+            <Button className={styles.c}  variant="subtle">Avant la location</Button>
           </Menu.Target>
 
           <Menu.Dropdown>
@@ -126,7 +129,7 @@ export const Header = ({ opened, toggle }) => {
             <Menu.Item
               className=""
               onClick={() => {
-                router.push("/loi_boutin");
+                router.push("/loiBoutin");
               }}
             >
               Loi Boutin
@@ -192,10 +195,10 @@ export const Header = ({ opened, toggle }) => {
         </Menu> */}
 
         <Link href="/devis">
-          <Button variant="subtle">Devis</Button>
+          <Button className={styles.c}  variant="subtle">Devis</Button>
         </Link>
         <Link href="/contact">
-          <Button variant="subtle">Nous contacter</Button>
+          <Button className={styles.c}  variant="subtle">Nous contacter</Button>
         </Link>
       </div>
     </div>

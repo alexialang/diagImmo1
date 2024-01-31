@@ -1,3 +1,6 @@
+.buttonColor{
+  background-color: #a773b0;
+}
 .root {
   margin-top: 80px;
 }
@@ -17,7 +20,7 @@
     opacity: 40%;
     padding: 20px 40px;
     border-radius: 50px;
-    margin-top: 70px;
+    margin-top: 45px;
   }
 }
 .divSize {
@@ -27,10 +30,9 @@
   position: absolute;
   font-size: 40px;
   color: white;
-  margin-top: 29px;
   top: 0;
   left: 0;
-  padding-left: 40px;
+  padding-left: 35px;
   padding-top: 14px;
 }
 

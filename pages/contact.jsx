@@ -105,12 +105,13 @@ const Contact = () => {
                 required
               />
               <Checkbox
+                color="#a773b0"
                 className={styles.marginTop}
                 defaultChecked
                 label={
                   <>
                     En cochant cette case, j’accepte la{" "}
-                    <Anchor href="/conf" target="_blank" inherit>
+                    <Anchor href="/conf" target="_blank" inherit >
                       Politique de confidentialité de ce site
                     </Anchor>
                   </>
@@ -120,7 +121,7 @@ const Contact = () => {
               <Group justify="center" mt="md">
                 <Popover width={200} position="bottom" withArrow shadow="md">
                   <Popover.Target>
-                    <Button type="submit" className={styles.marginTop}>
+                    <Button type="submit"  color="#a773b0" className={styles.marginTop} >
                       Envoyer
                     </Button>
                   </Popover.Target>
