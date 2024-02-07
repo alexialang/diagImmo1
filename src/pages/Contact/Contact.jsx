@@ -8,9 +8,8 @@ import {
   Textarea,
   Checkbox,
   Anchor,
-  Popover,
-  Text,
 } from "@mantine/core";
+import { showNotification } from "@mantine/notifications";
 import emailJs from "@emailjs/browser";
 
 export const Contact = () => {
@@ -25,17 +24,34 @@ export const Contact = () => {
   });
 
   const sendEmail = (values) => {
-    emailJs.send(
-      import.meta.env.VITE_EMAILJS_SERVICE_ID,
-      import.meta.env.VITE_EMAILJS_TEMPLATE_ID_CONTACT,
-      {
-        firstName: values.firstName,
-        lastName: values.lastName,
-        email: values.email,
-        message: values.message,
-        phoneNumber: values.phoneNumber,
-      }
-    );
+    emailJs
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID_CONTACT,
+        {
+          firstName: values.firstName,
+          lastName: values.lastName,
+          email: values.email,
+          message: values.message,
+          phoneNumber: values.phoneNumber,
+        }
+      )
+      .then(() => {
+        showNotification({
+          title: "Email envoyé",
+          message: "Votre email a bien été envoyé",
+          color: "green",
+          autoClose: 5000,
+        });
+      })
+      .catch(() => {
+        showNotification({
+          title: "Erreur",
+          message: "Une erreur est survenue",
+          color: "red",
+          autoClose: 5000,
+        });
+      });
   };
 
   return (
@@ -57,13 +73,14 @@ export const Contact = () => {
           <div className={styles.txt}>
             <p>
               Notre entreprise de diagnostic immobilier, active dans les
-              départements 57, 54 et 55, excelle dans la fourniture de
-              diagnostics conformes aux normes réglementaires. Forts d’une
-              équipe expérimentée, nous assurons une expertise technique
-              complète, une conformité rigoureuse, une réactivité accrue et une
-              transparence totale. Couvrant divers diagnostics, nous facilitons
-              des transactions immobilières sûres et transparentes pour nos
-              clients, qu’il s’agisse de ventes ou locations.
+              départements de moselle et meurthe-et-moselle, excelle dans la
+              fourniture de diagnostics conformes aux normes réglementaires.
+              Forts d’une équipe expérimentée, nous assurons une expertise
+              technique complète, une conformité rigoureuse, une réactivité
+              accrue et une transparence totale. Couvrant divers diagnostics,
+              nous facilitons des transactions immobilières sûres et
+              transparentes pour nos clients, qu’il s’agisse de ventes ou
+              locations.
             </p>
           </div>
         </div>
@@ -121,19 +138,9 @@ export const Contact = () => {
               />
 
               <Group justify="center" mt="md">
-                <Popover width={200} position="bottom" withArrow shadow="md">
-                  <Popover.Target>
-                    <Button type="submit" className={styles.marginTop}>
-                      Envoyer
-                    </Button>
-                  </Popover.Target>
-                  <Popover.Dropdown>
-                    <Text size="xs">
-                      This is uncontrolled popover, it is opened when button is
-                      clicked
-                    </Text>
-                  </Popover.Dropdown>
-                </Popover>
+                <Button type="submit" color="" className={styles.marginTop}>
+                  Envoyer
+                </Button>
               </Group>
             </form>
           </Box>

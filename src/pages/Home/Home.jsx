@@ -140,7 +140,7 @@ export const Home = () => {
                 </div>
                 <p>
                   Profitez de conseils personnalisés pour répondre à vos besoins
-                  spécifiques, que ce soit pour la localisation, la vente, ou
+                  spécifiques, que ce soit pour la location, la vente, ou
                   l’achat d’un bien immobilier.
                 </p>
               </div>
@@ -182,8 +182,8 @@ export const Home = () => {
             (MOSELLE) ?
           </h2>
           <p>
-            · Le diagnostic <strong>amiante</strong> est requis lorsque le{" "}
-            <strong>permis de construire</strong> a été déposé{" "}
+            · Le diagnostic <strong>amiante</strong> est requis lorsque le
+            <strong>permis de construire</strong> a été déposé
             <strong>avant 1997</strong> dans le département de la Moselle.
             <br />· Le <strong>DPE</strong> (Diagnostic de Performance
             Énergétique) est une obligation.
@@ -196,7 +196,7 @@ export const Home = () => {
             <br />· Le <strong>diagnostic termites </strong>est exigé si un
             arrêté préfectoral (dans le département de la Moselle) ou communal
             (à Metz) le prescrit.
-            <br />· Le métrage <strong>Loi Carrez</strong> est requis pour les{" "}
+            <br />· Le métrage <strong>Loi Carrez</strong> est requis pour les
             <strong>biens en copropriété</strong> .
             <br />
             ·L’ <strong>État des Risques Pollution des sols</strong> (

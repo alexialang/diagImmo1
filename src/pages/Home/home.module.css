@@ -13,10 +13,14 @@
   margin-bottom: 40px;
   background-color: #a773b0ca;
   border-color: white;
-}
-.buttonFirstImg:hover {
+  &:focus {
+    outline: none;
+  }&:hover {
   border-color: white;
+  background-color: #a773b0e8;
 }
+}
+
 
 /* Section 2 */
 
@@ -77,6 +81,7 @@
 .purpleButton {
   border: solid 1px white;
   &:hover {
+    background-color: #a773b0e5;
     border: solid 1px white;
   }
   &:focus {
