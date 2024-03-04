@@ -183,8 +183,8 @@ export const Home = () => {
           </h2>
           <p>
             · Le diagnostic <strong>amiante</strong> est requis lorsque le
-            <strong>permis de construire</strong> a été déposé
-            <strong>avant 1997</strong> dans le département de la Moselle.
+            <strong> permis de construire</strong> a été déposé
+            <strong> avant 1997</strong> dans le département de la Moselle.
             <br />· Le <strong>DPE</strong> (Diagnostic de Performance
             Énergétique) est une obligation.
             <br />· Le <strong>diagnostic plomb</strong> est obligatoire pour
