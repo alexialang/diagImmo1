@@ -1,6 +1,8 @@
 .root {
-  margin-top: 80px;
+  margin-top: 80px ;
+  width: 100%;
 }
+
 .backgroundImg {
   background-image: url(../../assets/daniel-mccullough--FPFq_trr2Y-unsplash2.jpg);
   height: 200px;
