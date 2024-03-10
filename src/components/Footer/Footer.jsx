@@ -55,9 +55,9 @@ export const Footer = () => {
               · Loi Boutin
             </Link>
             <br />
-            <Link className={classes.link} to="/dtg">
+            {/* <Link className={classes.link} to="/dtg">
               · DTG
-            </Link>
+            </Link> */}
           </p>
         </div>
         <div>

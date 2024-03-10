@@ -313,6 +313,7 @@ export const Devis = () => {
 
               <Checkbox
                 className={styles.marginTop}
+                required
                 defaultChecked
                 label={
                   <>

@@ -11,7 +11,7 @@ import imgUrlCathe from "../../assets/cathe.png";
 export const Home = () => {
   return (
     // Section imgPano
-    <div>
+    <div className={styles.container}>
       <div className={styles.firstImage}>
         <Link to="/devis">
           <Button

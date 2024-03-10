@@ -21,6 +21,10 @@ export const Contact = () => {
     email: "",
     phoneNumber: "",
     message: "",
+
+    validate: {
+      email: (value) => (/^\S+@\S+$/.test(value) ? null : "Invalid email"),
+    },
   });
 
   const sendEmail = (values) => {
@@ -127,6 +131,7 @@ export const Contact = () => {
               <Checkbox
                 className={styles.marginTop}
                 defaultChecked
+                required
                 label={
                   <>
                     En cochant cette case, j’accepte la{" "}

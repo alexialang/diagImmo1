@@ -1,4 +1,7 @@
 /* Section Image Panoramique */
+.container{
+  height: 100%;
+}
 .firstImage {
   background-image: url(../../assets/imagePano1.png);
   background-size: cover;
@@ -124,7 +127,7 @@
 /* Section Pourquoi */
 .divPourquoi {
   display: flex;
-  width: 80%;
+  background-color: #fefefe;
   margin: auto;
   flex-direction: column-reverse;
   justify-content: center;
@@ -171,7 +174,7 @@
   text-align: center;
 }
 .txtLastSection {
-  background-color: #f1eeee;
+  background-color: #fefefe;
   padding: 20px;
 }
 .lastSection {
@@ -182,6 +185,7 @@
   align-items: center;
   row-gap: 20px;
   clear: both;
+  background-color: #fefefe;
 }
 .lastSection img {
   width: 300px;
@@ -230,13 +234,12 @@
     margin-top: 70px;
   }
   .divPourquoi {
-    width: 95%;
     margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
+    padding-bottom: 80px;
   }
 
   .txtPourquoi {
@@ -272,8 +275,9 @@
   .lastSection {
     display: flex;
     flex-direction: row;
-    width: 85%;
+   justify-content: center;
     margin: auto;
+    padding-bottom: 60px;
   }
 
   .lastSection img {
