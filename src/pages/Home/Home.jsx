@@ -124,7 +124,7 @@ export const Home = () => {
             <div className={styles.column}>
               <div>
                 <div className={styles.row}>
-                  <img src={imgUrlCheck} />
+                  <img src={imgUrlCheck} alt="check" />
                   <h3>Expertise Approfondie</h3>
                 </div>
                 <p>
@@ -135,7 +135,7 @@ export const Home = () => {
               </div>
               <div>
                 <div className={styles.row}>
-                  <img src={imgUrlCheck} />
+                  <img src={imgUrlCheck} alt="check" />
                   <h3>Conseils Personnalisés </h3>
                 </div>
                 <p>
@@ -148,7 +148,7 @@ export const Home = () => {
             <div className={styles.column}>
               <div>
                 <div className={styles.row}>
-                  <img src={imgUrlCheck} />
+                  <img src={imgUrlCheck} alt="check" />
                   <h3>Minimisation des Risques : </h3>
                 </div>
                 <p>
@@ -159,7 +159,7 @@ export const Home = () => {
               </div>
               <div>
                 <div className={styles.row}>
-                  <img src={imgUrlCheck} />
+                  <img src={imgUrlCheck} alt="check" />
                   <h3>Approche Personnalisée : </h3>
                 </div>
                 <p>
@@ -203,7 +203,7 @@ export const Home = () => {
             <strong>ERP</strong> ) est une obligation à respecter.
           </p>
         </div>
-        <img src={imgUrlCathe} />
+        <img src={imgUrlCathe} alt="photo cathédrale metz" />
       </div>
     </div>
   );
